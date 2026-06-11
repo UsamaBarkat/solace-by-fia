@@ -1,0 +1,43 @@
+@import "tailwindcss";
+
+@theme {
+  /* Brand colours — literal hex, safe in plain @theme */
+  --color-white:    #FFFFFF;
+  --color-petal:    #FCE8EE;
+  --color-blossom:  #F4B3C5;
+  --color-rose:     #A23E5F;
+  --color-ink:      #382A2E;
+}
+
+@theme inline {
+  /*
+   * Fonts — must use `inline` so Tailwind writes the var() directly into
+   * the utility class (font-display, font-body) instead of creating an
+   * intermediate --font-display on :root that can't resolve at build time.
+   * next/font injects --font-fraunces / --font-inter on <html> via layout.tsx.
+   */
+  --font-display: var(--font-fraunces);
+  --font-body:    var(--font-inter);
+}
+
+body {
+  background-color: #FFFFFF;
+  color: #382A2E;
+  font-family: var(--font-inter, sans-serif);
+}
+
+/* ── Floating petals ──────────────────────────────────────────── */
+@keyframes petal-fall {
+  0%   { transform: translateY(-60px) translateX(0px)  rotate(0deg);   opacity: 0;    }
+  8%   { opacity: 0.75; }
+  45%  { transform: translateY(44vh)  translateX(22px)  rotate(165deg); }
+  90%  { opacity: 0.55; }
+  100% { transform: translateY(108vh) translateX(10px)  rotate(330deg); opacity: 0;    }
+}
+
+/* Desktop-only petals hidden below md breakpoint */
+.petal-desktop { display: none; }
+@media (min-width: 768px) { .petal-desktop { display: block; } }
+
+/* Fully disable all petals when the user prefers reduced motion */
+@media (prefers-reduced-motion: reduce) { .petal-container { display: none; } }

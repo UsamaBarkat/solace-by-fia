@@ -1,0 +1,160 @@
+[
+  {
+    "code": "SBF-LWN-001",
+    "name": "3 Piece Embroidered Lawn Suit",
+    "category": "unstitched",
+    "collection": "Summer Lawn '25",
+    "fabric": "Premium Lawn",
+    "pieces": "3 Piece — Shirt, Trouser, Dupatta",
+    "price": 4500,
+    "salePrice": 3800,
+    "inStock": true,
+    "badges": ["Sale", "New"],
+    "images": {
+      "front":   "/products/sbf-lwn-001-front.jpg",
+      "back":    "/products/sbf-lwn-001-back.jpg",
+      "closeup": "/products/sbf-lwn-001-closeup.jpg",
+      "dupatta": "/products/sbf-lwn-001-dupatta.jpg"
+    },
+    "description": "Elevate your summer wardrobe with this exquisite 3-piece lawn suit featuring intricate thread embroidery on the shirt front and sleeves. The coordinating printed trouser and embroidered dupatta complete this effortlessly elegant look."
+  },
+  {
+    "code": "SBF-LWN-002",
+    "name": "3 Piece Digital Print Lawn Suit",
+    "category": "unstitched",
+    "collection": "Summer Lawn '25",
+    "fabric": "Premium Lawn",
+    "pieces": "3 Piece — Shirt, Trouser, Dupatta",
+    "price": 3200,
+    "inStock": true,
+    "badges": ["New"],
+    "images": {
+      "front":   "/products/sbf-lwn-002-front.jpg",
+      "back":    "/products/sbf-lwn-002-back.jpg",
+      "closeup": "/products/sbf-lwn-002-closeup.jpg",
+      "dupatta": "/products/sbf-lwn-002-dupatta.jpg"
+    },
+    "description": "A vibrant 3-piece digital print lawn suit with a bold floral design on the shirt, matched with a complementary printed trouser and sheer printed dupatta. Perfect for casual outings and daytime events."
+  },
+  {
+    "code": "SBF-CHF-001",
+    "name": "3 Piece Embroidered Chiffon Suit",
+    "category": "unstitched",
+    "collection": "Festive Chiffon",
+    "fabric": "Fancy Chiffon",
+    "pieces": "3 Piece — Shirt, Trouser, Dupatta",
+    "price": 9500,
+    "salePrice": 8200,
+    "inStock": true,
+    "badges": ["Sale"],
+    "images": {
+      "front":   "/products/sbf-chf-001-front.jpg",
+      "back":    "/products/sbf-chf-001-back.jpg",
+      "closeup": "/products/sbf-chf-001-closeup.jpg",
+      "dupatta": "/products/sbf-chf-001-dupatta.jpg"
+    },
+    "description": "A statement piece for special occasions — this 3-piece chiffon suit features heavy resham and zari embroidery on the shirt yoke and hemline. The flowing dupatta with embroidered border adds a finishing touch of elegance."
+  },
+  {
+    "code": "SBF-STD-001",
+    "name": "Embroidered Lawn Kurta",
+    "category": "stitched",
+    "collection": "Everyday Ease",
+    "fabric": "Premium Lawn",
+    "pieces": "1 Piece — Shirt",
+    "price": 2800,
+    "inStock": true,
+    "badges": ["New"],
+    "images": {
+      "front":   "/products/sbf-std-001-front.jpg",
+      "back":    "/products/sbf-std-001-back.jpg",
+      "closeup": "/products/sbf-std-001-closeup.jpg"
+    },
+    "description": "A beautifully stitched lawn kurta with delicate embroidery at the neckline and cuffs. Ready to wear — just pair with your favourite trouser or cigarette pants for an effortlessly chic everyday look."
+  },
+  {
+    "code": "SBF-STD-002",
+    "name": "Printed Cotton 2-Piece Co-Ord",
+    "category": "stitched",
+    "collection": "Everyday Ease",
+    "fabric": "Premium Cotton",
+    "pieces": "2 Piece — Shirt, Trouser",
+    "price": 4800,
+    "inStock": true,
+    "images": {
+      "front":   "/products/sbf-std-002-front.jpg",
+      "back":    "/products/sbf-std-002-back.jpg",
+      "closeup": "/products/sbf-std-002-closeup.jpg"
+    },
+    "description": "A coordinated 2-piece cotton set featuring a vibrant block-printed shirt and matching straight-cut trouser. Breathable, comfortable fabric makes this ideal for summer days and casual get-togethers."
+  },
+  {
+    "code": "SBF-STD-003",
+    "name": "Embroidered Chiffon 2-Piece",
+    "category": "stitched",
+    "collection": "Evening Elegance",
+    "fabric": "Fancy Chiffon",
+    "pieces": "2 Piece — Shirt, Trouser",
+    "price": 7200,
+    "salePrice": 6400,
+    "inStock": false,
+    "badges": ["Sale"],
+    "images": {
+      "front":   "/products/sbf-std-003-front.jpg",
+      "back":    "/products/sbf-std-003-back.jpg",
+      "closeup": "/products/sbf-std-003-closeup.jpg"
+    },
+    "description": "An elegant ready-to-wear chiffon 2-piece with intricate hand-done embroidery on the shirt. The wide-leg palazzo trouser in matching fabric creates a fluid, formal silhouette perfect for evening events and formal dinners."
+  },
+  {
+    "code": "SBF-CHD-001",
+    "name": "Embroidered Pashmina Chaddar",
+    "category": "chaddar",
+    "collection": "Heritage Wraps",
+    "fabric": "Pure Pashmina",
+    "pieces": "1 Piece — Chaddar / Shawl",
+    "price": 11500,
+    "inStock": true,
+    "badges": ["New"],
+    "images": {
+      "front":   "/products/sbf-chd-001-front.jpg",
+      "back":    "/products/sbf-chd-001-back.jpg",
+      "closeup": "/products/sbf-chd-001-closeup.jpg"
+    },
+    "description": "A luxurious pure pashmina chaddar with hand-knotted fringe and exquisite needle embroidery along the border. A timeless heirloom piece that adds warmth and grace to any outfit, day or evening."
+  },
+  {
+    "code": "SBF-CHD-002",
+    "name": "Embroidered Lawn Chaddar",
+    "category": "chaddar",
+    "collection": "Heritage Wraps",
+    "fabric": "Premium Lawn",
+    "pieces": "1 Piece — Chaddar / Dupatta",
+    "price": 2400,
+    "inStock": true,
+    "images": {
+      "front":   "/products/sbf-chd-002-front.jpg",
+      "back":    "/products/sbf-chd-002-back.jpg",
+      "closeup": "/products/sbf-chd-002-closeup.jpg"
+    },
+    "description": "A lightweight lawn chaddar with a soft printed body and embroidered border — versatile enough to pair with a casual suit or use as a prayer wrap. A wardrobe everyday essential."
+  },
+  {
+    "code": "SBF-CHD-003",
+    "name": "Embroidered Silk Chaddar",
+    "category": "chaddar",
+    "collection": "Heritage Wraps",
+    "fabric": "Pure Silk",
+    "pieces": "1 Piece — Chaddar / Shawl",
+    "price": 14500,
+    "salePrice": 12500,
+    "inStock": true,
+    "badges": ["Sale", "New"],
+    "images": {
+      "front":   "/products/sbf-chd-003-front.jpg",
+      "back":    "/products/sbf-chd-003-back.jpg",
+      "closeup": "/products/sbf-chd-003-closeup.jpg"
+    },
+    "description": "A bridal-worthy pure silk chaddar with zari and resham embroidery in a traditional paisley motif. The lustrous silk base catches the light beautifully, making this a showstopping accessory for formal occasions and celebrations."
+  }
+]
