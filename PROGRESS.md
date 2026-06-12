@@ -16,6 +16,12 @@
 
 - [x] **Task 8 — Product detail page** `generateStaticParams` generates all 9 static pages; `ProductGallery.tsx` (client, thumbnail switcher); `Accordion.tsx` (native `<details>`/`<summary>`, no JS); breadcrumb nav; price/meta/stock/description; WhatsApp CTA ("Enquire" for out-of-stock); related products strip; per-page metadata.
 
+- [x] **Task 9 — Collections landing** `/collections/[slug]` with `generateStaticParams` over the 3 category slugs; per-collection title/tagline/description; category-switcher pills; reuses `ProductGrid` via `getByCategory`; bad slug → `notFound()`; cross-link to `/shop`.
+
+- [x] **Task 10 — Home page** Hero (petal wash, garment image, artisan eyebrow, Shop Now + WhatsApp CTAs); `CollectionCard` ×3; New Arrivals strip (products with "New" badge, 4-col grid); brand-story band; 3 `ReviewCard`s from reviews.json; `InstagramGrid` (curated static 3×2, links to profile); rose WhatsApp CTA band; blossom hairlines between bands (spec §3.6 — Task 10's "gold-hairline" wording is stale from old palette).
+
+- [x] **Task 11 — About, Reviews, Contact** `/about` (story band, 3 brand values incl. artisans, founder quote, rose CTA band); `/reviews` (full grid from reviews.json, computed 4.7 average, `ReviewCard` extended to show optional review photo); `/contact` (WhatsApp/Instagram/Facebook link cards + COD note, no form).
+
 ## Up next
 
-- [ ] **Task 9 — Collections landing (`/collections/[slug]`)** Slugs: unstitched, stitched, chaddar. Reuse ProductGrid filtered by category. Bad slug → 404.
+- [ ] **Task 12 — Polish + accessibility + meta** Per-page title/description, alt text on all images, visible keyboard focus, AA contrast check, verify prefers-reduced-motion. Target: Lighthouse a11y ≥ 90.
