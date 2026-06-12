@@ -41,3 +41,14 @@ body {
 
 /* Fully disable all petals when the user prefers reduced motion */
 @media (prefers-reduced-motion: reduce) { .petal-container { display: none; } }
+
+/* ── Product card cross-fade ──────────────────────────────────────── */
+@media (prefers-reduced-motion: reduce) {
+  .card-fade    { transition: none !important; }
+  .card-closeup { display: none !important; }
+}
+
+/* ── Accordion (details/summary) ─────────────────────────────────── */
+/* Remove the native disclosure triangle in all browsers */
+summary { list-style: none; }
+summary::-webkit-details-marker { display: none; }
