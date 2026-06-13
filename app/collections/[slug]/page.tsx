@@ -14,19 +14,19 @@ const COLLECTIONS: Record<
     title: "Unstitched",
     tagline: "Fabric, as you like it",
     description:
-      "Premium unstitched suits in lawn and chiffon — cut and stitched your way. Each 3-piece comes with shirt, trouser and dupatta fabric, ready for your tailor.",
+      "Hand-embroidered kurta fabrics on soft cotton lawn, sold unstitched so your tailor can cut them exactly to your fit. Heavy resham handwork on every piece.",
   },
   stitched: {
     title: "Stitched",
     tagline: "Ready when you are",
     description:
-      "Ready-to-wear kurtas, co-ords and formals — stitched with care so you can skip the tailor. Standard S–XL sizing; WhatsApp us your measurements if unsure.",
+      "Ready-to-wear embroidered kurtas — from everyday chikankari to heavy statement pieces. Standard S–XL sizing; WhatsApp us your measurements if unsure.",
   },
   chaddar: {
     title: "Chaddar",
     tagline: "Wrapped in heritage",
     description:
-      "Hand-embroidered chaddars and shawls in pashmina, silk and lawn — heirloom wraps that finish any outfit with warmth and grace.",
+      "Hand-embroidered chaddars and wraps — heirloom pieces that finish any outfit with warmth and grace.",
   },
 };
 
@@ -58,11 +58,11 @@ export default async function CollectionPage({ params }: Props) {
     <div className="max-w-6xl mx-auto px-4 py-10">
       {/* Collection header */}
       <header className="mb-8 max-w-2xl">
-        <p className="font-body text-xs uppercase tracking-widest text-ink/40 mb-1">
+        <p className="font-body text-xs uppercase tracking-widest text-ink/70 mb-1">
           {collection.tagline}
         </p>
         <h1 className="font-display text-4xl text-ink mb-3">{collection.title}</h1>
-        <p className="font-body text-sm text-ink/60 leading-relaxed">
+        <p className="font-body text-sm text-ink/70 leading-relaxed">
           {collection.description}
         </p>
       </header>
@@ -85,14 +85,14 @@ export default async function CollectionPage({ params }: Props) {
         ))}
       </nav>
 
-      <p className="font-body text-sm text-ink/50 mb-6">
+      <p className="font-body text-sm text-ink/70 mb-6">
         {products.length} {products.length === 1 ? "product" : "products"}
       </p>
 
       <ProductGrid products={products} />
 
       {/* Cross-link to full shop */}
-      <p className="mt-10 font-body text-sm text-ink/60">
+      <p className="mt-10 font-body text-sm text-ink/70">
         Looking for something else?{" "}
         <Link
           href="/shop"

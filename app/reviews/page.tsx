@@ -5,7 +5,7 @@ import ReviewCard from "@/components/ReviewCard";
 export const metadata: Metadata = {
   title: "Reviews — Solace by Fia",
   description:
-    "What our customers say about Solace by Fia — handcrafted suits, kurtas and chaddars, reviewed by the women who wear them.",
+    "What our customers say about Solace by Fia — hand-embroidered kurtas and chaddars, reviewed by the women who wear them.",
 };
 
 export default function ReviewsPage() {
@@ -16,11 +16,11 @@ export default function ReviewsPage() {
   return (
     <div className="max-w-6xl mx-auto px-4 py-10">
       <header className="text-center mb-10 max-w-2xl mx-auto">
-        <p className="font-body text-xs uppercase tracking-widest text-ink/40 mb-1">
+        <p className="font-body text-xs uppercase tracking-widest text-ink/70 mb-1">
           Customer love
         </p>
         <h1 className="font-display text-4xl text-ink mb-3">Reviews</h1>
-        <p className="font-body text-sm text-ink/60">
+        <p className="font-body text-sm text-ink/70">
           Rated {average.toFixed(1)} out of 5 across {reviews.length} reviews — every
           one from a real WhatsApp order.
         </p>

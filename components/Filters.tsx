@@ -55,7 +55,7 @@ export default function Filters({ fabrics, value, onChange }: FiltersProps) {
     <div className="bg-petal/60 rounded-2xl px-5 py-5 space-y-5">
       {/* Category */}
       <fieldset>
-        <legend className="font-body text-xs uppercase tracking-widest text-ink/40 mb-2.5">
+        <legend className="font-body text-xs uppercase tracking-widest text-ink/70 mb-2.5">
           Category
         </legend>
         <div className="flex flex-wrap gap-2">
@@ -69,7 +69,7 @@ export default function Filters({ fabrics, value, onChange }: FiltersProps) {
 
       {/* Fabric */}
       <fieldset>
-        <legend className="font-body text-xs uppercase tracking-widest text-ink/40 mb-2.5">
+        <legend className="font-body text-xs uppercase tracking-widest text-ink/70 mb-2.5">
           Fabric
         </legend>
         <div className="flex flex-wrap gap-2">
@@ -91,12 +91,12 @@ export default function Filters({ fabrics, value, onChange }: FiltersProps) {
             type="checkbox"
             checked={value.inStockOnly}
             onChange={(e) => set({ inStockOnly: e.target.checked })}
-            className={`sr-only ${BASE_FOCUS}`}
+            className="peer sr-only"
           />
-          {/* visual toggle track */}
+          {/* visual toggle track — carries the focus ring for the sr-only checkbox */}
           <span
             aria-hidden="true"
-            className={`relative inline-flex h-6 w-11 flex-shrink-0 items-center rounded-full transition-colors ${
+            className={`relative inline-flex h-6 w-11 flex-shrink-0 items-center rounded-full transition-colors peer-focus-visible:outline-2 peer-focus-visible:outline-rose peer-focus-visible:outline-offset-2 ${
               value.inStockOnly ? "bg-rose" : "bg-blossom/60"
             }`}
           >

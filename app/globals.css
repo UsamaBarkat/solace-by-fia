@@ -52,3 +52,17 @@ body {
 /* Remove the native disclosure triangle in all browsers */
 summary { list-style: none; }
 summary::-webkit-details-marker { display: none; }
+
+/* ── Reduced motion: global belt-and-braces ──────────────────────── */
+/* Petals and card cross-fades are disabled above; this catches every
+   remaining transition/animation (hover zooms, scale presses, fades). */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

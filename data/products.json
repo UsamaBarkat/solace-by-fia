@@ -1,176 +1,162 @@
 [
   {
     "code": "SBF-LWN-001",
-    "name": "3 Piece Embroidered Lawn Suit",
+    "name": "Hand-Embroidered Unstitched Kurta — Rose Pink",
     "category": "unstitched",
-    "collection": "Summer Lawn '25",
-    "fabric": "Premium Lawn",
-    "pieces": "3 Piece â€” Shirt, Trouser, Dupatta",
-    "price": 4500,
-    "salePrice": 3800,
+    "collection": "Unstitched Kurtas",
+    "fabric": "Cotton Lawn",
+    "pieces": "1 Piece — Unstitched Kurta Fabric",
+    "price": 6800,
+    "salePrice": 5800,
     "inStock": true,
-    "badges": [
-      "Sale",
-      "New"
-    ],
+    "badges": ["Sale", "New"],
     "images": {
       "front": "/products/sbf-lwn-001-front.jpg",
       "back": "/products/sbf-lwn-001-front.jpg",
-      "closeup": "/products/sbf-lwn-001-front.jpg",
-      "dupatta": "/products/sbf-lwn-001-front.jpg"
+      "closeup": "/products/sbf-lwn-001-front.jpg"
     },
-    "description": "Elevate your summer wardrobe with this exquisite 3-piece lawn suit featuring intricate thread embroidery on the shirt front and sleeves. The coordinating printed trouser and embroidered dupatta complete this effortlessly elegant look."
+    "description": "Rose-pink kurta fabric covered in dense multicolour hand-embroidery — roses, violets and leafy vines worked in resham thread from the neckline to the hem. Sold unstitched so your tailor can cut it exactly to your fit."
   },
   {
     "code": "SBF-LWN-002",
-    "name": "3 Piece Digital Print Lawn Suit",
+    "name": "Hand-Embroidered Unstitched Kurta — Sage",
     "category": "unstitched",
-    "collection": "Summer Lawn '25",
-    "fabric": "Premium Lawn",
-    "pieces": "3 Piece â€” Shirt, Trouser, Dupatta",
-    "price": 3200,
+    "collection": "Unstitched Kurtas",
+    "fabric": "Cotton Lawn",
+    "pieces": "1 Piece — Unstitched Kurta Fabric",
+    "price": 6800,
+    "salePrice": 6500,
     "inStock": true,
-    "badges": [
-      "New"
-    ],
+    "badges": ["Sale", "New"],
     "images": {
       "front": "/products/sbf-lwn-002-front.jpg",
       "back": "/products/sbf-lwn-002-front.jpg",
-      "closeup": "/products/sbf-lwn-002-front.jpg",
-      "dupatta": "/products/sbf-lwn-002-front.jpg"
+      "closeup": "/products/sbf-lwn-002-front.jpg"
     },
-    "description": "A vibrant 3-piece digital print lawn suit with a bold floral design on the shirt, matched with a complementary printed trouser and sheer printed dupatta. Perfect for casual outings and daytime events."
+    "description": "Sage-toned kurta fabric with coral and ivory florals worked in climbing vines, finished with a beaded coral trim line down the front. Sold unstitched and ready for your tailor."
   },
   {
     "code": "SBF-CHF-001",
-    "name": "3 Piece Embroidered Chiffon Suit",
+    "name": "Embroidered Unstitched Kurta — Wisteria",
     "category": "unstitched",
-    "collection": "Festive Chiffon",
-    "fabric": "Fancy Chiffon",
-    "pieces": "3 Piece â€” Shirt, Trouser, Dupatta",
-    "price": 9500,
-    "salePrice": 8200,
+    "collection": "Unstitched Kurtas",
+    "fabric": "Cotton Lawn",
+    "pieces": "1 Piece — Unstitched Kurta Fabric",
+    "price": 7200,
+    "salePrice": 6200,
     "inStock": true,
-    "badges": [
-      "Sale"
-    ],
+    "badges": ["Sale"],
     "images": {
       "front": "/products/sbf-chf-001-front.jpg",
       "back": "/products/sbf-chf-001-front.jpg",
-      "closeup": "/products/sbf-chf-001-front.jpg",
-      "dupatta": "/products/sbf-chf-001-front.jpg"
+      "closeup": "/products/sbf-chf-001-front.jpg"
     },
-    "description": "A statement piece for special occasions â€” this 3-piece chiffon suit features heavy resham and zari embroidery on the shirt yoke and hemline. The flowing dupatta with embroidered border adds a finishing touch of elegance."
+    "description": "Crisp off-white kurta fabric scattered with wisteria-purple floral sprays and fine vinework — light, airy handwork for everyday elegance. Sold unstitched, ready for your tailor."
   },
   {
     "code": "SBF-STD-001",
-    "name": "Embroidered Lawn Kurta",
+    "name": "Chikankari Mirror-Work Kurta — Mustard",
     "category": "stitched",
     "collection": "Everyday Ease",
-    "fabric": "Premium Lawn",
-    "pieces": "1 Piece â€” Shirt",
+    "fabric": "Cotton",
+    "pieces": "1 Piece — Stitched Kurta",
     "price": 2800,
+    "salePrice": 2500,
     "inStock": true,
-    "badges": [
-      "New"
-    ],
+    "badges": ["Sale", "New"],
     "images": {
       "front": "/products/sbf-std-001-front.jpg",
       "back": "/products/sbf-std-001-front.jpg",
       "closeup": "/products/sbf-std-001-front.jpg"
     },
-    "description": "A beautifully stitched lawn kurta with delicate embroidery at the neckline and cuffs. Ready to wear â€” just pair with your favourite trouser or cigarette pants for an effortlessly chic everyday look."
+    "description": "A ready-to-wear mustard kurta with white chikankari-style embroidery and delicate mirror accents around the neckline and front panel. Bright, festive and easy to style with white or contrast trousers."
   },
   {
     "code": "SBF-STD-002",
-    "name": "Printed Cotton 2-Piece Co-Ord",
+    "name": "Embroidered Kurta — Pink & Teal",
     "category": "stitched",
     "collection": "Everyday Ease",
-    "fabric": "Premium Cotton",
-    "pieces": "2 Piece â€” Shirt, Trouser",
-    "price": 4800,
+    "fabric": "Cotton",
+    "pieces": "1 Piece — Stitched Kurta",
+    "price": 3700,
     "inStock": true,
     "images": {
       "front": "/products/sbf-std-002-front.jpg",
       "back": "/products/sbf-std-002-front.jpg",
       "closeup": "/products/sbf-std-002-front.jpg"
     },
-    "description": "A coordinated 2-piece cotton set featuring a vibrant block-printed shirt and matching straight-cut trouser. Breathable, comfortable fabric makes this ideal for summer days and casual get-togethers."
+    "description": "A soft pink kurta embroidered with teal and turquoise florals — denser at the yoke, scattering down the front. Cool-toned handwork on a warm base that works for daytime and casual wear alike."
   },
   {
     "code": "SBF-STD-003",
-    "name": "Embroidered Chiffon 2-Piece",
+    "name": "Heavy Embroidered Kurta — Navy",
     "category": "stitched",
     "collection": "Evening Elegance",
-    "fabric": "Fancy Chiffon",
-    "pieces": "2 Piece â€” Shirt, Trouser",
-    "price": 7200,
-    "salePrice": 6400,
+    "fabric": "Cotton",
+    "pieces": "1 Piece — Stitched Kurta",
+    "price": 6800,
+    "salePrice": 6300,
     "inStock": false,
-    "badges": [
-      "Sale"
-    ],
+    "badges": ["Sale"],
     "images": {
       "front": "/products/sbf-std-003-front.jpg",
       "back": "/products/sbf-std-003-front.jpg",
       "closeup": "/products/sbf-std-003-front.jpg"
     },
-    "description": "An elegant ready-to-wear chiffon 2-piece with intricate hand-done embroidery on the shirt. The wide-leg palazzo trouser in matching fabric creates a fluid, formal silhouette perfect for evening events and formal dinners."
+    "description": "A deep navy kurta with dense white, pink and green floral embroidery framing the neckline panel and scattering down the front. Rich evening handwork on a midnight base."
   },
   {
     "code": "SBF-CHD-001",
-    "name": "Embroidered Pashmina Chaddar",
-    "category": "chaddar",
-    "collection": "Heritage Wraps",
-    "fabric": "Pure Pashmina",
-    "pieces": "1 Piece â€” Chaddar / Shawl",
-    "price": 11500,
+    "name": "Heavy Embroidered Kurta — Emerald",
+    "category": "stitched",
+    "collection": "Statement Kurtas",
+    "fabric": "Cotton",
+    "pieces": "1 Piece — Stitched Kurta",
+    "price": 7200,
+    "salePrice": 6500,
     "inStock": true,
-    "badges": [
-      "New"
-    ],
+    "badges": ["Sale", "New"],
     "images": {
       "front": "/products/sbf-chd-001-front.jpg",
       "back": "/products/sbf-chd-001-front.jpg",
       "closeup": "/products/sbf-chd-001-front.jpg"
     },
-    "description": "A luxurious pure pashmina chaddar with hand-knotted fringe and exquisite needle embroidery along the border. A timeless heirloom piece that adds warmth and grace to any outfit, day or evening."
+    "description": "An emerald-green kurta carrying some of our heaviest handwork — yellow and powder-blue florals embroidered edge to edge, sleeves included. A statement piece for daawats and dinners."
   },
   {
     "code": "SBF-CHD-002",
-    "name": "Embroidered Lawn Chaddar",
-    "category": "chaddar",
-    "collection": "Heritage Wraps",
-    "fabric": "Premium Lawn",
-    "pieces": "1 Piece â€” Chaddar / Dupatta",
-    "price": 2400,
+    "name": "Heavy Embroidered Kurta — Pink Blossom",
+    "category": "stitched",
+    "collection": "Statement Kurtas",
+    "fabric": "Cotton",
+    "pieces": "1 Piece — Stitched Kurta",
+    "price": 6800,
+    "salePrice": 6200,
     "inStock": true,
+    "badges": ["Sale"],
     "images": {
       "front": "/products/sbf-chd-002-front.jpg",
       "back": "/products/sbf-chd-002-front.jpg",
       "closeup": "/products/sbf-chd-002-front.jpg"
     },
-    "description": "A lightweight lawn chaddar with a soft printed body and embroidered border â€” versatile enough to pair with a casual suit or use as a prayer wrap. A wardrobe everyday essential."
+    "description": "A cream kurta embroidered all over with pink blossoms and green vinework in thick, hand-laid thread — heavy, joyful handwork in our signature palette."
   },
   {
     "code": "SBF-CHD-003",
-    "name": "Embroidered Silk Chaddar",
+    "name": "Hand-Embroidered Chaddar — Blush Pink",
     "category": "chaddar",
     "collection": "Heritage Wraps",
-    "fabric": "Pure Silk",
-    "pieces": "1 Piece â€” Chaddar / Shawl",
-    "price": 14500,
-    "salePrice": 12500,
+    "fabric": "Cotton",
+    "pieces": "1 Piece — Chaddar / Shawl",
+    "price": 6800,
+    "salePrice": 6500,
     "inStock": true,
-    "badges": [
-      "Sale",
-      "New"
-    ],
+    "badges": ["Sale", "New"],
     "images": {
       "front": "/products/sbf-chd-003-front.jpg",
       "back": "/products/sbf-chd-003-front.jpg",
       "closeup": "/products/sbf-chd-003-front.jpg"
     },
-    "description": "A bridal-worthy pure silk chaddar with zari and resham embroidery in a traditional paisley motif. The lustrous silk base catches the light beautifully, making this a showstopping accessory for formal occasions and celebrations."
+    "description": "A blush-pink chaddar with tone-on-tone rose embroidery and subtle shimmer accents worked across the full drape. Soft, romantic handwork that turns a simple outfit into an occasion."
   }
 ]

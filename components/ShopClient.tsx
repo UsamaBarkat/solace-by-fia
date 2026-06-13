@@ -34,7 +34,7 @@ export default function ShopClient({ products }: { products: Product[] }) {
     <div className="space-y-6">
       <Filters fabrics={fabrics} value={filters} onChange={setFilters} />
 
-      <p className="font-body text-sm text-ink/50" aria-live="polite" aria-atomic="true">
+      <p className="font-body text-sm text-ink/70" aria-live="polite" aria-atomic="true">
         {filtered.length === products.length
           ? `${products.length} products`
           : `${filtered.length} of ${products.length} products`}
@@ -45,7 +45,7 @@ export default function ShopClient({ products }: { products: Product[] }) {
       ) : (
         <div className="py-24 text-center space-y-3">
           <p className="font-display text-2xl text-ink">No products found</p>
-          <p className="font-body text-sm text-ink/50">
+          <p className="font-body text-sm text-ink/70">
             Try removing a filter to see more results.
           </p>
           <button

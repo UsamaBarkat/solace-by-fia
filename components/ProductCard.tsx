@@ -52,7 +52,7 @@ export default function ProductCard({ product }: { product: Product }) {
         {/* Out of stock */}
         {!inStock && (
           <div className="absolute inset-0 bg-white/70 flex items-end justify-center pb-4">
-            <span className="font-body text-xs font-semibold uppercase tracking-widest text-ink/60">
+            <span className="font-body text-xs font-semibold uppercase tracking-widest text-ink">
               Out of Stock
             </span>
           </div>
@@ -61,7 +61,7 @@ export default function ProductCard({ product }: { product: Product }) {
 
       {/* Info */}
       <div className="mt-3 px-0.5 space-y-1">
-        <p className="font-body text-xs uppercase tracking-widest text-ink/40">{category}</p>
+        <p className="font-body text-xs uppercase tracking-widest text-ink/70">{category}</p>
         <h3 className="font-display text-base text-ink leading-snug group-hover:text-rose transition-colors">
           {name}
         </h3>
@@ -71,7 +71,7 @@ export default function ProductCard({ product }: { product: Product }) {
               <span className="font-body font-semibold text-rose">
                 PKR {salePrice.toLocaleString()}
               </span>
-              <span className="font-body text-sm text-ink/40 line-through">
+              <span className="font-body text-sm text-ink/70 line-through">
                 PKR {price.toLocaleString()}
               </span>
             </>

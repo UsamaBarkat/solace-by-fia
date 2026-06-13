@@ -36,7 +36,6 @@ export default async function ProductPage({ params }: Props) {
 
   const related = getRelated(product, 4);
   const waLink  = buildWhatsAppLink(product);
-  const displayPrice = product.salePrice ?? product.price;
 
   return (
     <>
@@ -44,7 +43,7 @@ export default async function ProductPage({ params }: Props) {
       <div className="max-w-6xl mx-auto px-4 py-8 md:py-12">
 
         {/* Breadcrumb */}
-        <nav aria-label="Breadcrumb" className="mb-6 flex items-center gap-2 font-body text-xs text-ink/40">
+        <nav aria-label="Breadcrumb" className="mb-6 flex items-center gap-2 font-body text-xs text-ink/70">
           <Link href="/" className="hover:text-rose transition-colors">Home</Link>
           <span aria-hidden="true">›</span>
           <Link href="/shop" className="hover:text-rose transition-colors">Shop</Link>
@@ -56,7 +55,7 @@ export default async function ProductPage({ params }: Props) {
             {CATEGORY_LABEL[product.category]}
           </Link>
           <span aria-hidden="true">›</span>
-          <span className="text-ink/60 truncate max-w-[140px]">{product.name}</span>
+          <span className="text-ink/70 truncate max-w-[140px]">{product.name}</span>
         </nav>
 
         <div className="grid gap-10 lg:grid-cols-2 lg:gap-16">
@@ -68,13 +67,13 @@ export default async function ProductPage({ params }: Props) {
 
             {/* Name + code */}
             <div>
-              <p className="font-body text-xs uppercase tracking-widest text-ink/40 mb-1">
+              <p className="font-body text-xs uppercase tracking-widest text-ink/70 mb-1">
                 {product.collection}
               </p>
               <h1 className="font-display text-3xl text-ink leading-snug mb-1">
                 {product.name}
               </h1>
-              <p className="font-body text-xs text-ink/40 tracking-wide">
+              <p className="font-body text-xs text-ink/70 tracking-wide">
                 Code: <span className="font-medium">{product.code}</span>
               </p>
             </div>
@@ -86,7 +85,7 @@ export default async function ProductPage({ params }: Props) {
                   <span className="font-display text-3xl text-rose">
                     PKR {product.salePrice.toLocaleString()}
                   </span>
-                  <span className="font-body text-lg text-ink/40 line-through">
+                  <span className="font-body text-lg text-ink/70 line-through">
                     PKR {product.price.toLocaleString()}
                   </span>
                   <span className="font-body text-xs font-semibold text-rose bg-rose/10 px-2 py-0.5 rounded-full">
@@ -103,19 +102,19 @@ export default async function ProductPage({ params }: Props) {
             {/* Meta grid */}
             <dl className="grid grid-cols-2 gap-x-6 gap-y-3 border-y border-blossom/40 py-5">
               <div>
-                <dt className="font-body text-xs uppercase tracking-widest text-ink/40 mb-0.5">Fabric</dt>
+                <dt className="font-body text-xs uppercase tracking-widest text-ink/70 mb-0.5">Fabric</dt>
                 <dd className="font-body text-sm text-ink">{product.fabric}</dd>
               </div>
               <div>
-                <dt className="font-body text-xs uppercase tracking-widest text-ink/40 mb-0.5">Pieces</dt>
+                <dt className="font-body text-xs uppercase tracking-widest text-ink/70 mb-0.5">Pieces</dt>
                 <dd className="font-body text-sm text-ink">{product.pieces}</dd>
               </div>
               <div>
-                <dt className="font-body text-xs uppercase tracking-widest text-ink/40 mb-0.5">Category</dt>
+                <dt className="font-body text-xs uppercase tracking-widest text-ink/70 mb-0.5">Category</dt>
                 <dd className="font-body text-sm text-ink capitalize">{product.category}</dd>
               </div>
               <div>
-                <dt className="font-body text-xs uppercase tracking-widest text-ink/40 mb-0.5">Availability</dt>
+                <dt className="font-body text-xs uppercase tracking-widest text-ink/70 mb-0.5">Availability</dt>
                 <dd className="flex items-center gap-1.5">
                   <span
                     className={`inline-block w-2 h-2 rounded-full flex-shrink-0 ${
@@ -123,7 +122,7 @@ export default async function ProductPage({ params }: Props) {
                     }`}
                     aria-hidden="true"
                   />
-                  <span className={`font-body text-sm ${product.inStock ? "text-green-700" : "text-ink/50"}`}>
+                  <span className={`font-body text-sm ${product.inStock ? "text-green-700" : "text-ink/70"}`}>
                     {product.inStock ? "In Stock" : "Out of Stock"}
                   </span>
                 </dd>
@@ -167,9 +166,9 @@ export default async function ProductPage({ params }: Props) {
             <div className="border-t border-blossom/50">
               <Accordion title="Size Guide">
                 <p>
-                  Our unstitched suits are cut to standard Pakistani sizing. For stitched pieces,
-                  sizes run S–XL — please mention your size when ordering. Approximate chest
-                  measurements: S 34–36&quot;, M 36–38&quot;, L 38–40&quot;, XL 40–42&quot;.
+                  Our unstitched kurta fabrics come in generous standard cuts for your tailor.
+                  For stitched pieces, sizes run S–XL — please mention your size when ordering.
+                  Approximate chest measurements: S 34–36&quot;, M 36–38&quot;, L 38–40&quot;, XL 40–42&quot;.
                 </p>
                 <p className="mt-2">
                   Unsure? WhatsApp us your measurements and we&apos;ll advise the best fit before

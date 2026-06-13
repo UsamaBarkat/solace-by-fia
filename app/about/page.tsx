@@ -20,8 +20,8 @@ export default function AboutPage() {
           <h1 className="font-display text-4xl text-ink leading-snug">
             Clothing that carries warmth
           </h1>
-          <p className="font-body text-base text-ink/60 leading-relaxed">
-            Solace by Fia began on Instagram, with a handful of embroidered suits and a
+          <p className="font-body text-base text-ink/70 leading-relaxed">
+            Solace by Fia began on Instagram, with a handful of embroidered kurtas and a
             belief that clothing made by hand carries a warmth no machine can match.
             What started as a small page has grown into a community of women who value
             craft over fast fashion — pieces made slowly, worn often, and loved for years.
@@ -34,7 +34,7 @@ export default function AboutPage() {
         <div className="grid gap-8 md:grid-cols-3">
           <div className="space-y-2">
             <h2 className="font-display text-xl text-ink">Made by hand</h2>
-            <p className="font-body text-sm text-ink/60 leading-relaxed">
+            <p className="font-body text-sm text-ink/70 leading-relaxed">
               Every suit and chaddar passes through skilled hands — resham and zari
               embroidery, block printing, hand-knotted fringes. Small imperfections are
               part of the story; no two pieces are exactly alike.
@@ -42,7 +42,7 @@ export default function AboutPage() {
           </div>
           <div className="space-y-2">
             <h2 className="font-display text-xl text-ink">Made with artisans</h2>
-            <p className="font-body text-sm text-ink/60 leading-relaxed">
+            <p className="font-body text-sm text-ink/70 leading-relaxed">
               We work directly with local embroiderers, weavers and tailors across
               Pakistan. Buying from us supports the households behind every stitch —
               fair work, paid fairly, on their own terms.
@@ -50,9 +50,9 @@ export default function AboutPage() {
           </div>
           <div className="space-y-2">
             <h2 className="font-display text-xl text-ink">Made to last</h2>
-            <p className="font-body text-sm text-ink/60 leading-relaxed">
-              We choose fabrics that age gracefully — premium lawn, pure pashmina, real
-              silk — and finish them properly, so the piece you order today becomes the
+            <p className="font-body text-sm text-ink/70 leading-relaxed">
+              We choose soft, breathable cottons and lawns that age gracefully, and
+              finish every piece properly — so the kurta you order today becomes the
               one you reach for, season after season.
             </p>
           </div>

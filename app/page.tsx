@@ -11,7 +11,7 @@ import InstagramGrid from "@/components/InstagramGrid";
 export const metadata: Metadata = {
   title: "Solace by Fia — Handcrafted Women's Clothing",
   description:
-    "Unstitched suits, ready-to-wear and hand-embroidered chaddars, made with love in Pakistan. Order on WhatsApp.",
+    "Hand-embroidered kurtas and chaddars — unstitched and ready-to-wear, made with love in Pakistan. Order on WhatsApp.",
 };
 
 const COLLECTIONS: { category: Category; title: string; tagline: string }[] = [
@@ -39,7 +39,7 @@ export default function Home() {
       {/* ── Featured collections ──────────────────────────────── */}
       <section className="max-w-6xl mx-auto px-4 py-14">
         <div className="text-center mb-8">
-          <p className="font-body text-xs uppercase tracking-widest text-ink/40 mb-1">
+          <p className="font-body text-xs uppercase tracking-widest text-ink/70 mb-1">
             Explore
           </p>
           <h2 className="font-display text-3xl text-ink">Our Collections</h2>
@@ -63,7 +63,7 @@ export default function Home() {
       <section className="max-w-6xl mx-auto px-4 py-14">
         <div className="flex items-end justify-between mb-8">
           <div>
-            <p className="font-body text-xs uppercase tracking-widest text-ink/40 mb-1">
+            <p className="font-body text-xs uppercase tracking-widest text-ink/70 mb-1">
               Just in
             </p>
             <h2 className="font-display text-3xl text-ink">New Arrivals</h2>
@@ -87,10 +87,10 @@ export default function Home() {
           <h2 className="font-display text-3xl text-ink leading-snug">
             Every stitch tells a story
           </h2>
-          <p className="font-body text-base text-ink/60 leading-relaxed">
+          <p className="font-body text-base text-ink/70 leading-relaxed">
             Solace by Fia began with a simple belief: clothing made by hand carries a
             warmth no machine can match. We work with local artisans across Pakistan —
-            embroiderers, weavers and tailors — so every suit and chaddar supports the
+            embroiderers, weavers and tailors — so every kurta and chaddar supports the
             hands that made it.
           </p>
           <Link
@@ -105,7 +105,7 @@ export default function Home() {
       {/* ── Customer love ─────────────────────────────────────── */}
       <section className="max-w-6xl mx-auto px-4 py-14">
         <div className="text-center mb-8">
-          <p className="font-body text-xs uppercase tracking-widest text-ink/40 mb-1">
+          <p className="font-body text-xs uppercase tracking-widest text-ink/70 mb-1">
             Customer love
           </p>
           <h2 className="font-display text-3xl text-ink">What our customers say</h2>
@@ -130,7 +130,7 @@ export default function Home() {
       {/* ── Instagram ─────────────────────────────────────────── */}
       <section className="max-w-6xl mx-auto px-4 py-14">
         <div className="text-center mb-8">
-          <p className="font-body text-xs uppercase tracking-widest text-ink/40 mb-1">
+          <p className="font-body text-xs uppercase tracking-widest text-ink/70 mb-1">
             @solacebyfia
           </p>
           <h2 className="font-display text-3xl text-ink">Follow along</h2>

@@ -5,12 +5,12 @@ const IG_URL = "https://instagram.com/solacebyfia";
 /* Curated static grid (spec §1.4: no live Instagram API in v1).
    Images live in /public/instagram/; every tile links to the profile. */
 const POSTS = [
-  { src: "/instagram/post-1.jpg", alt: "Embroidered lawn suit styled flat-lay" },
-  { src: "/instagram/post-2.jpg", alt: "Close-up of resham thread embroidery" },
-  { src: "/instagram/post-3.jpg", alt: "Chiffon dupatta draped over a chair" },
-  { src: "/instagram/post-4.jpg", alt: "Pashmina chaddar with hand-knotted fringe" },
-  { src: "/instagram/post-5.jpg", alt: "Ready-to-wear kurta on a hanger" },
-  { src: "/instagram/post-6.jpg", alt: "Silk chaddar in paisley embroidery" },
+  { src: "/instagram/post-1.jpg", alt: "Pink fabric with tone-on-tone rose embroidery" },
+  { src: "/instagram/post-2.jpg", alt: "Navy kurta with white and pink floral embroidery" },
+  { src: "/instagram/post-3.jpg", alt: "Pink kurta embroidered with teal florals" },
+  { src: "/instagram/post-4.jpg", alt: "Off-white fabric with wisteria-purple floral sprays" },
+  { src: "/instagram/post-5.jpg", alt: "Sage kurta fabric with coral floral vines" },
+  { src: "/instagram/post-6.jpg", alt: "Periwinkle-blue kurta with violet floral embroidery" },
 ];
 
 export default function InstagramGrid() {

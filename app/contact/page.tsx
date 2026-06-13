@@ -32,11 +32,11 @@ export default function ContactPage() {
   return (
     <div className="max-w-3xl mx-auto px-4 py-12">
       <header className="text-center mb-10">
-        <p className="font-body text-xs uppercase tracking-widest text-ink/40 mb-1">
+        <p className="font-body text-xs uppercase tracking-widest text-ink/70 mb-1">
           Get in touch
         </p>
         <h1 className="font-display text-4xl text-ink mb-3">Contact</h1>
-        <p className="font-body text-sm text-ink/60 max-w-md mx-auto">
+        <p className="font-body text-sm text-ink/70 max-w-md mx-auto">
           No forms, no waiting — message us directly and a real person (usually Fia
           herself) will reply.
         </p>
@@ -56,7 +56,7 @@ export default function ContactPage() {
                   {label}
                 </p>
                 <p className="font-body text-sm font-medium text-rose">{handle}</p>
-                <p className="font-body text-sm text-ink/50 mt-0.5">{note}</p>
+                <p className="font-body text-sm text-ink/70 mt-0.5">{note}</p>
               </div>
               <span
                 aria-hidden="true"
@@ -70,7 +70,7 @@ export default function ContactPage() {
       </ul>
 
       <div className="mt-10 bg-petal/60 rounded-2xl px-6 py-5 text-center">
-        <p className="font-body text-sm text-ink/60 leading-relaxed">
+        <p className="font-body text-sm text-ink/70 leading-relaxed">
           Ordering is simple: send us the product name or code on WhatsApp, and
           we&rsquo;ll confirm availability, price and delivery. Cash on delivery
           available across Pakistan.

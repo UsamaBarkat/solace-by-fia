@@ -16,7 +16,7 @@ export default function Footer() {
 
         {/* Quick links */}
         <div className="flex flex-col gap-3">
-          <p className="font-body text-xs uppercase tracking-widest text-ink/40">Explore</p>
+          <p className="font-body text-xs uppercase tracking-widest text-ink/70">Explore</p>
           <nav aria-label="Footer navigation" className="flex flex-col gap-1.5">
             {[
               { href: "/shop",    label: "Shop" },
@@ -27,7 +27,7 @@ export default function Footer() {
               <Link
                 key={href}
                 href={href}
-                className="font-body text-sm text-ink/70 hover:text-rose transition-colors"
+                className="font-body text-sm text-ink/70 hover:text-rose transition-colors focus-visible:outline-2 focus-visible:outline-rose focus-visible:outline-offset-2"
               >
                 {label}
               </Link>
@@ -37,31 +37,31 @@ export default function Footer() {
 
         {/* Socials + policy placeholders */}
         <div className="flex flex-col gap-3">
-          <p className="font-body text-xs uppercase tracking-widest text-ink/40">Connect</p>
+          <p className="font-body text-xs uppercase tracking-widest text-ink/70">Connect</p>
           <div className="flex flex-col gap-1.5">
             <a href="https://instagram.com/solacebyfia" target="_blank" rel="noopener noreferrer"
-               className="font-body text-sm text-ink/70 hover:text-rose transition-colors">
+               className="font-body text-sm text-ink/70 hover:text-rose transition-colors focus-visible:outline-2 focus-visible:outline-rose focus-visible:outline-offset-2">
               Instagram
             </a>
             <a href="https://facebook.com/solacebyfia" target="_blank" rel="noopener noreferrer"
-               className="font-body text-sm text-ink/70 hover:text-rose transition-colors">
+               className="font-body text-sm text-ink/70 hover:text-rose transition-colors focus-visible:outline-2 focus-visible:outline-rose focus-visible:outline-offset-2">
               Facebook
             </a>
             <a href="https://wa.me/923143083863" target="_blank" rel="noopener noreferrer"
-               className="font-body text-sm text-ink/70 hover:text-rose transition-colors">
+               className="font-body text-sm text-ink/70 hover:text-rose transition-colors focus-visible:outline-2 focus-visible:outline-rose focus-visible:outline-offset-2">
               WhatsApp
             </a>
           </div>
           <div className="flex flex-col gap-1.5 mt-2">
-            <span className="font-body text-xs text-ink/30">Privacy Policy</span>
-            <span className="font-body text-xs text-ink/30">Terms of Service</span>
+            <span className="font-body text-xs text-ink/70">Privacy Policy</span>
+            <span className="font-body text-xs text-ink/70">Terms of Service</span>
           </div>
         </div>
       </div>
 
       {/* Bottom bar */}
       <div className="border-t border-petal">
-        <p className="max-w-6xl mx-auto px-4 py-4 font-body text-xs text-ink/30 text-center">
+        <p className="max-w-6xl mx-auto px-4 py-4 font-body text-xs text-ink/70 text-center">
           © {new Date().getFullYear()} Solace by Fia. All rights reserved.
         </p>
       </div>

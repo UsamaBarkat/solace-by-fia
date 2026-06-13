@@ -22,6 +22,13 @@
 
 - [x] **Task 11 — About, Reviews, Contact** `/about` (story band, 3 brand values incl. artisans, founder quote, rose CTA band); `/reviews` (full grid from reviews.json, computed 4.7 average, `ReviewCard` extended to show optional review photo); `/contact` (WhatsApp/Instagram/Facebook link cards + COD note, no form).
 
+- [x] **Photo integration** 9 real screenshots converted PNG→JPEG into `public/products/` as front images (mapping chosen by fabric/label match); 6 into `public/instagram/`; `products.json` back/closeup/dupatta paths point at the front image so nothing 404s.
+
+- [x] **Photo reconciliation** Retaken screenshots integrated (zero half-white images); prices synced from photo labels; all 9 names/fabrics/descriptions rewritten to honestly match photos; categories now 3 unstitched / 5 stitched / 1 chaddar (photos are source of truth; CHD codes kept on two stitched kurtas).
+- [x] **Task 12 — Polish + accessibility + meta** AA contrast sweep (all muted ink text → `text-ink/70` ≈ 4.9:1; sub-/70 opacities fail on white); footer link + toggle-track focus rings; global `prefers-reduced-motion` belt-and-braces rule in globals.css; stale copy sweep (hero, about, shop/home/reviews metadata, size guide); reviews.json rewritten to reference current products, broken `photo` field removed; lint + build clean.
+
+- [x] **Task 13 — Performance pass** All 15 images re-encoded from source PNGs at q70 (products native ~500px, Instagram downscaled to 400px): total image weight 1.40MB → 0.86MB (−39%). Verified in built output: only the hero image is preloaded (LCP), 17 below-fold images lazy-load, fonts are preloaded woff2 with `font-display:swap`. Build clean. Lighthouse scores pending (user runs in browser).
+
 ## Up next
 
-- [ ] **Task 12 — Polish + accessibility + meta** Per-page title/description, alt text on all images, visible keyboard focus, AA contrast check, verify prefers-reduced-motion. Target: Lighthouse a11y ≥ 90.
+- [ ] **Task 14 — Deploy** Push to GitHub, connect Vercel, get public URL; document GitHub Pages fallback in README. Pending: user's Lighthouse results from Task 13.
