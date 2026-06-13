@@ -1,3 +1,9 @@
+# Solace by Fia — Showcase Website
+
+**Live site: https://solace-by-fia.vercel.app**
+
+A pitch showcase for Solace by Fia, a Pakistani women's clothing brand (unstitched / stitched / chaddar). Next.js App Router + TypeScript + Tailwind CSS v4, statically exported, ordering via WhatsApp deep links. See `PROGRESS.md` for the build log and `../SOLACE-SHOWCASE-SPEC.md` for the spec.
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started

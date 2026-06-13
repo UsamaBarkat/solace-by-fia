@@ -25,10 +25,14 @@
 - [x] **Photo integration** 9 real screenshots converted PNG→JPEG into `public/products/` as front images (mapping chosen by fabric/label match); 6 into `public/instagram/`; `products.json` back/closeup/dupatta paths point at the front image so nothing 404s.
 
 - [x] **Photo reconciliation** Retaken screenshots integrated (zero half-white images); prices synced from photo labels; all 9 names/fabrics/descriptions rewritten to honestly match photos; categories now 3 unstitched / 5 stitched / 1 chaddar (photos are source of truth; CHD codes kept on two stitched kurtas).
-- [x] **Task 12 — Polish + accessibility + meta** AA contrast sweep (all muted ink text → `text-ink/70` ≈ 4.9:1; sub-/70 opacities fail on white); footer link + toggle-track focus rings; global `prefers-reduced-motion` belt-and-braces rule in globals.css; stale copy sweep (hero, about, shop/home/reviews metadata, size guide); reviews.json rewritten to reference current products, broken `photo` field removed; lint + build clean.
+- [x] **Task 12 — Polish + accessibility + meta** AA contrast sweep (all muted ink text → `text-ink/70` ≈ 4.9:1; sub-/70 opacities fail on white); footer link + toggle-track focus rings; global `prefers-reduced-motion` belt-and-braces rule in globals.css; stale copy sweep (hero, about, shop/home/reviews metadata, size guide); reviews.json rewritten to reference current products, broken `photo` field removed; lint + build clean. **Verified: Lighthouse Accessibility 100.**
 
-- [x] **Task 13 — Performance pass** All 15 images re-encoded from source PNGs at q70 (products native ~500px, Instagram downscaled to 400px): total image weight 1.40MB → 0.86MB (−39%). Verified in built output: only the hero image is preloaded (LCP), 17 below-fold images lazy-load, fonts are preloaded woff2 with `font-display:swap`. Build clean. Lighthouse scores pending (user runs in browser).
+- [x] **Task 13 — Performance pass** All 15 images re-encoded from source PNGs at q70 (products native ~500px, Instagram downscaled to 400px): total image weight 1.40MB → 0.86MB (−39%). Verified in built output: only the hero image is preloaded (LCP), 17 below-fold images lazy-load, fonts are preloaded woff2 with `font-display:swap`. Build clean. **Verified: Lighthouse Performance 96 on the production static export — both spec targets (≥90 perf, ≥90 a11y) cleared.**
 
-## Up next
+- [x] **Task 14 — Deploy** Repo pushed to GitHub (`UsamaBarkat/solace-by-fia`), connected to Vercel, auto-deploys on push to `master`.
 
-- [ ] **Task 14 — Deploy** Push to GitHub, connect Vercel, get public URL; document GitHub Pages fallback in README. Pending: user's Lighthouse results from Task 13.
+## 🎉 Project complete — all 14 tasks done
+
+**Live URL: https://solace-by-fia.vercel.app**
+
+Lighthouse (production): Performance 96 · Accessibility 100. Spec success criteria met: 3 collections, 9 products, WhatsApp ordering on every product, sticky WhatsApp button, mobile-first at 360px, petals behind content + disabled under reduced-motion.
