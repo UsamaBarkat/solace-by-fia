@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { getAll, getByCategory, getAllReviews, type Category } from "@/lib/products";
+import { getAll, getClearance, getAllReviews, type Product } from "@/lib/products";
 import { buildWhatsAppLink } from "@/lib/whatsapp";
 import Hero from "@/components/Hero";
 import CollectionCard from "@/components/CollectionCard";
@@ -11,14 +11,8 @@ import InstagramGrid from "@/components/InstagramGrid";
 export const metadata: Metadata = {
   title: "Solace by Fia — Handcrafted Women's Clothing",
   description:
-    "Hand-embroidered kurtas and chaddars — unstitched and ready-to-wear, made with love in Pakistan. Order on WhatsApp.",
+    "Hand-embroidered kurtas in 2-piece & 3-piece styles, made with love in Pakistan. Order on WhatsApp.",
 };
-
-const COLLECTIONS: { category: Category; title: string; tagline: string }[] = [
-  { category: "unstitched", title: "Unstitched", tagline: "Fabric, as you like it" },
-  { category: "stitched",   title: "Stitched",   tagline: "Ready when you are" },
-  { category: "chaddar",    title: "Chaddar",    tagline: "Wrapped in heritage" },
-];
 
 /* Thin blossom hairline between bands (spec §3.6) */
 function Hairline() {
@@ -28,30 +22,41 @@ function Hairline() {
 export default function Home() {
   const products = getAll();
   const newArrivals = products.filter((p) => p.badges?.includes("New")).slice(0, 4);
+  const clearance = getClearance();
   const reviews = getAllReviews().slice(0, 3);
   const heroProduct = products[0];
+
+  // Three entry points into the shop (replaces the old fabric collections)
+  const shopCover: Product =
+    products.find((p) => !p.badges?.includes("New") && p.salePrice === undefined) ??
+    products[0];
+  const sections: { href: string; title: string; tagline: string; coverProduct: Product }[] = [
+    { href: "/new-arrivals", title: "New Arrivals", tagline: "Just in",  coverProduct: newArrivals[0] },
+    { href: "/shop",         title: "2pc & 3pc",    tagline: "Shop all", coverProduct: shopCover },
+    { href: "/clearance",    title: "Clearance",    tagline: "Reduced",  coverProduct: clearance[clearance.length - 1] },
+  ];
 
   return (
     <>
       {/* ── Hero ───────────────────────────────────────────────── */}
       <Hero product={heroProduct} />
 
-      {/* ── Featured collections ──────────────────────────────── */}
+      {/* ── Ways to shop ──────────────────────────────────────── */}
       <section className="max-w-6xl mx-auto px-4 py-14">
         <div className="text-center mb-8">
           <p className="font-body text-xs uppercase tracking-widest text-ink/70 mb-1">
             Explore
           </p>
-          <h2 className="font-display text-3xl text-ink">Our Collections</h2>
+          <h2 className="font-display text-3xl text-ink">Where to begin</h2>
         </div>
         <div className="grid gap-4 sm:grid-cols-3">
-          {COLLECTIONS.map(({ category, title, tagline }) => (
+          {sections.map(({ href, title, tagline, coverProduct }) => (
             <CollectionCard
-              key={category}
-              category={category}
+              key={href}
+              href={href}
               title={title}
               tagline={tagline}
-              coverProduct={getByCategory(category)[0]}
+              coverProduct={coverProduct}
             />
           ))}
         </div>

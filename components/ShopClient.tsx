@@ -6,24 +6,17 @@ import Filters, { type FilterState } from "@/components/Filters";
 import ProductGrid from "@/components/ProductGrid";
 
 const DEFAULT_FILTERS: FilterState = {
-  category: "all",
-  fabric: "all",
+  pieceCount: "all",
   inStockOnly: false,
 };
 
 export default function ShopClient({ products }: { products: Product[] }) {
   const [filters, setFilters] = useState<FilterState>(DEFAULT_FILTERS);
 
-  const fabrics = useMemo(
-    () => Array.from(new Set(products.map((p) => p.fabric))).sort(),
-    [products]
-  );
-
   const filtered = useMemo(
     () =>
       products.filter((p) => {
-        if (filters.category !== "all" && p.category !== filters.category) return false;
-        if (filters.fabric !== "all" && p.fabric !== filters.fabric) return false;
+        if (filters.pieceCount !== "all" && p.pieceCount !== filters.pieceCount) return false;
         if (filters.inStockOnly && !p.inStock) return false;
         return true;
       }),
@@ -32,7 +25,7 @@ export default function ShopClient({ products }: { products: Product[] }) {
 
   return (
     <div className="space-y-6">
-      <Filters fabrics={fabrics} value={filters} onChange={setFilters} />
+      <Filters value={filters} onChange={setFilters} />
 
       <p className="font-body text-sm text-ink/70" aria-live="polite" aria-atomic="true">
         {filtered.length === products.length

@@ -35,7 +35,7 @@ export default function AboutPage() {
           <div className="space-y-2">
             <h2 className="font-display text-xl text-ink">Made by hand</h2>
             <p className="font-body text-sm text-ink/70 leading-relaxed">
-              Every suit and chaddar passes through skilled hands — resham and zari
+              Every kurta and chaddar passes through skilled hands — resham and zari
               embroidery, block printing, hand-knotted fringes. Small imperfections are
               part of the story; no two pieces are exactly alike.
             </p>

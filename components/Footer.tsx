@@ -9,7 +9,7 @@ export default function Footer() {
         <div className="flex flex-col gap-2">
           <span className="font-display text-lg text-rose">Solace by Fia</span>
           <p className="font-body text-sm text-ink/70 leading-relaxed max-w-xs">
-            Handcrafted women&rsquo;s clothing — unstitched, stitched &amp; chaddar.
+            Hand-embroidered women&rsquo;s clothing in 2-piece &amp; 3-piece styles.
             Supporting local artisans.
           </p>
         </div>
@@ -19,10 +19,12 @@ export default function Footer() {
           <p className="font-body text-xs uppercase tracking-widest text-ink/70">Explore</p>
           <nav aria-label="Footer navigation" className="flex flex-col gap-1.5">
             {[
-              { href: "/shop",    label: "Shop" },
-              { href: "/about",   label: "About" },
-              { href: "/reviews", label: "Reviews" },
-              { href: "/contact", label: "Contact" },
+              { href: "/new-arrivals", label: "New Arrivals" },
+              { href: "/shop",         label: "Shop" },
+              { href: "/clearance",    label: "Clearance" },
+              { href: "/reviews",      label: "Reviews" },
+              { href: "/contact",      label: "Contact" },
+              { href: "/about",        label: "About" },
             ].map(({ href, label }) => (
               <Link
                 key={href}
@@ -39,17 +41,21 @@ export default function Footer() {
         <div className="flex flex-col gap-3">
           <p className="font-body text-xs uppercase tracking-widest text-ink/70">Connect</p>
           <div className="flex flex-col gap-1.5">
-            <a href="https://instagram.com/solacebyfia" target="_blank" rel="noopener noreferrer"
+            <a href="https://www.instagram.com/solacebyfia" target="_blank" rel="noopener noreferrer"
                className="font-body text-sm text-ink/70 hover:text-rose transition-colors focus-visible:outline-2 focus-visible:outline-rose focus-visible:outline-offset-2">
               Instagram
             </a>
-            <a href="https://facebook.com/solacebyfia" target="_blank" rel="noopener noreferrer"
+            <a href="https://www.facebook.com/share/17oXZL8cFD/" target="_blank" rel="noopener noreferrer"
                className="font-body text-sm text-ink/70 hover:text-rose transition-colors focus-visible:outline-2 focus-visible:outline-rose focus-visible:outline-offset-2">
               Facebook
             </a>
             <a href="https://wa.me/923143083863" target="_blank" rel="noopener noreferrer"
                className="font-body text-sm text-ink/70 hover:text-rose transition-colors focus-visible:outline-2 focus-visible:outline-rose focus-visible:outline-offset-2">
               WhatsApp
+            </a>
+            <a href="https://chat.whatsapp.com/ItHe8FGLBqIALfrpM9m9yO" target="_blank" rel="noopener noreferrer"
+               className="font-body text-sm text-ink/70 hover:text-rose transition-colors focus-visible:outline-2 focus-visible:outline-rose focus-visible:outline-offset-2">
+              WhatsApp Community
             </a>
           </div>
           <div className="flex flex-col gap-1.5 mt-2">

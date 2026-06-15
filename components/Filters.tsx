@@ -1,22 +1,19 @@
 "use client";
 
 export interface FilterState {
-  category: string;
-  fabric: string;
+  pieceCount: string;
   inStockOnly: boolean;
 }
 
 interface FiltersProps {
-  fabrics: string[];
   value: FilterState;
   onChange: (f: FilterState) => void;
 }
 
-const CATEGORIES = [
-  { value: "all",        label: "All" },
-  { value: "unstitched", label: "Unstitched" },
-  { value: "stitched",   label: "Stitched" },
-  { value: "chaddar",    label: "Chaddar" },
+const PIECE_COUNTS = [
+  { value: "all", label: "All" },
+  { value: "2pc", label: "2pc" },
+  { value: "3pc", label: "3pc" },
 ];
 
 const BASE_FOCUS = "focus-visible:outline-2 focus-visible:outline-rose focus-visible:outline-offset-2";
@@ -35,7 +32,7 @@ function Pill({
       type="button"
       onClick={onClick}
       aria-pressed={active}
-      className={`font-body text-sm px-3 py-1.5 rounded-full border transition-colors cursor-pointer ${BASE_FOCUS} ${
+      className={`font-body text-sm px-4 py-2 rounded-full border transition-colors cursor-pointer ${BASE_FOCUS} ${
         active
           ? "bg-rose text-white border-rose"
           : "bg-white border-blossom text-ink hover:border-rose hover:text-rose"
@@ -46,39 +43,21 @@ function Pill({
   );
 }
 
-export default function Filters({ fabrics, value, onChange }: FiltersProps) {
+export default function Filters({ value, onChange }: FiltersProps) {
   const set = (patch: Partial<FilterState>) => onChange({ ...value, ...patch });
-  const isDefault =
-    value.category === "all" && value.fabric === "all" && !value.inStockOnly;
+  const isDefault = value.pieceCount === "all" && !value.inStockOnly;
 
   return (
     <div className="bg-petal/60 rounded-2xl px-5 py-5 space-y-5">
-      {/* Category */}
+      {/* Piece count — primary Shop filter */}
       <fieldset>
         <legend className="font-body text-xs uppercase tracking-widest text-ink/70 mb-2.5">
-          Category
+          Pieces
         </legend>
         <div className="flex flex-wrap gap-2">
-          {CATEGORIES.map(({ value: v, label }) => (
-            <Pill key={v} active={value.category === v} onClick={() => set({ category: v })}>
+          {PIECE_COUNTS.map(({ value: v, label }) => (
+            <Pill key={v} active={value.pieceCount === v} onClick={() => set({ pieceCount: v })}>
               {label}
-            </Pill>
-          ))}
-        </div>
-      </fieldset>
-
-      {/* Fabric */}
-      <fieldset>
-        <legend className="font-body text-xs uppercase tracking-widest text-ink/70 mb-2.5">
-          Fabric
-        </legend>
-        <div className="flex flex-wrap gap-2">
-          <Pill active={value.fabric === "all"} onClick={() => set({ fabric: "all" })}>
-            All
-          </Pill>
-          {fabrics.map((f) => (
-            <Pill key={f} active={value.fabric === f} onClick={() => set({ fabric: f })}>
-              {f}
             </Pill>
           ))}
         </div>
@@ -112,9 +91,7 @@ export default function Filters({ fabrics, value, onChange }: FiltersProps) {
         {!isDefault && (
           <button
             type="button"
-            onClick={() =>
-              onChange({ category: "all", fabric: "all", inStockOnly: false })
-            }
+            onClick={() => onChange({ pieceCount: "all", inStockOnly: false })}
             className={`font-body text-xs text-rose underline underline-offset-2 hover:no-underline ${BASE_FOCUS}`}
           >
             Clear all filters

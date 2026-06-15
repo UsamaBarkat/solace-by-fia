@@ -5,7 +5,7 @@ import ShopClient from "@/components/ShopClient";
 export const metadata: Metadata = {
   title: "Shop — Solace by Fia",
   description:
-    "Browse hand-embroidered kurtas and chaddars — unstitched and ready-to-wear, all handcrafted by Solace by Fia.",
+    "Browse hand-embroidered kurtas in 2-piece & 3-piece styles, all handcrafted by Solace by Fia.",
 };
 
 export default function ShopPage() {
@@ -18,7 +18,7 @@ export default function ShopPage() {
       </p>
       <h1 className="font-display text-4xl text-ink mb-2">Shop All</h1>
       <p className="font-body text-sm text-ink/70 mb-8">
-        Embroidered kurtas &amp; chaddars — unstitched and ready-to-wear, handcrafted with love.
+        Hand-embroidered kurtas in 2pc &amp; 3pc — handcrafted with love.
       </p>
 
       <ShopClient products={products} />

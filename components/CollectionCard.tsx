@@ -1,18 +1,18 @@
 import Image from "next/image";
 import Link from "next/link";
-import type { Category, Product } from "@/lib/products";
+import type { Product } from "@/lib/products";
 
 interface Props {
-  category: Category;
+  href: string;
   title: string;
   tagline: string;
   coverProduct: Product;
 }
 
-export default function CollectionCard({ category, title, tagline, coverProduct }: Props) {
+export default function CollectionCard({ href, title, tagline, coverProduct }: Props) {
   return (
     <Link
-      href={`/collections/${category}`}
+      href={href}
       className="group block rounded-2xl overflow-hidden relative aspect-[4/5] bg-petal focus-visible:outline-2 focus-visible:outline-rose focus-visible:outline-offset-2"
     >
       <Image

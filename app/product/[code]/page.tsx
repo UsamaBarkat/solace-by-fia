@@ -23,12 +23,6 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   };
 }
 
-const CATEGORY_LABEL: Record<string, string> = {
-  unstitched: "Unstitched",
-  stitched:   "Stitched",
-  chaddar:    "Chaddar",
-};
-
 export default async function ProductPage({ params }: Props) {
   const { code } = await params;
   const product = getByCode(code);
@@ -47,13 +41,6 @@ export default async function ProductPage({ params }: Props) {
           <Link href="/" className="hover:text-rose transition-colors">Home</Link>
           <span aria-hidden="true">›</span>
           <Link href="/shop" className="hover:text-rose transition-colors">Shop</Link>
-          <span aria-hidden="true">›</span>
-          <Link
-            href={`/collections/${product.category}`}
-            className="hover:text-rose transition-colors capitalize"
-          >
-            {CATEGORY_LABEL[product.category]}
-          </Link>
           <span aria-hidden="true">›</span>
           <span className="text-ink/70 truncate max-w-[140px]">{product.name}</span>
         </nav>
@@ -110,8 +97,8 @@ export default async function ProductPage({ params }: Props) {
                 <dd className="font-body text-sm text-ink">{product.pieces}</dd>
               </div>
               <div>
-                <dt className="font-body text-xs uppercase tracking-widest text-ink/70 mb-0.5">Category</dt>
-                <dd className="font-body text-sm text-ink capitalize">{product.category}</dd>
+                <dt className="font-body text-xs uppercase tracking-widest text-ink/70 mb-0.5">Piece Count</dt>
+                <dd className="font-body text-sm text-ink">{product.pieceCount}</dd>
               </div>
               <div>
                 <dt className="font-body text-xs uppercase tracking-widest text-ink/70 mb-0.5">Availability</dt>
@@ -178,15 +165,15 @@ export default async function ProductPage({ params }: Props) {
 
               <Accordion title="Delivery">
                 <p>
-                  We ship across Pakistan via TCS or Leopards Couriers. Delivery time: 3–5 working
-                  days in major cities, 5–7 days elsewhere.
+                  We ship all over Pakistan via TCS. Delivery time: 7–9 working days.
                 </p>
                 <p className="mt-2">
-                  Delivery charges: PKR 150 within Karachi · PKR 200 nationwide. Charges are
-                  confirmed when you place your order via WhatsApp.
+                  Flat delivery charge of PKR 200 nationwide, confirmed when you place your
+                  order via WhatsApp.
                 </p>
               </Accordion>
 
+              {/* TODO: client to provide returns policy */}
               <Accordion title="Returns & Exchanges">
                 <p>
                   Unused, unaltered items in original packaging may be exchanged within 7 days of

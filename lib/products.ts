@@ -3,6 +3,8 @@ import reviewsData from "@/data/reviews.json";
 
 export type Category = "unstitched" | "stitched" | "chaddar";
 
+export type PieceCount = "2pc" | "3pc";
+
 export interface ProductImages {
   front: string;
   back: string;
@@ -17,6 +19,8 @@ export interface Product {
   collection: string;
   fabric: string;
   pieces: string;
+  pieceCount: PieceCount;
+  isNew: boolean;
   price: number;
   salePrice?: number;
   inStock: boolean;
@@ -43,13 +47,21 @@ export function getByCode(code: string): Product | undefined {
   return products.find((p) => p.code === code);
 }
 
-export function getByCategory(category: Category): Product[] {
-  return products.filter((p) => p.category === category);
+export function getByPieceCount(count: PieceCount): Product[] {
+  return products.filter((p) => p.pieceCount === count);
+}
+
+export function getNewArrivals(): Product[] {
+  return products.filter((p) => p.isNew);
+}
+
+export function getClearance(): Product[] {
+  return products.filter((p) => p.salePrice !== undefined);
 }
 
 export function getRelated(product: Product, limit = 4): Product[] {
   return products
-    .filter((p) => p.category === product.category && p.code !== product.code)
+    .filter((p) => p.pieceCount === product.pieceCount && p.code !== product.code)
     .slice(0, limit);
 }
 

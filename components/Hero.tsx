@@ -19,8 +19,8 @@ export default function Hero({ product }: { product: Product }) {
             stitched with <span className="text-rose">solace</span>
           </h1>
           <p className="font-body text-base text-ink/70 leading-relaxed max-w-md mx-auto md:mx-0">
-            Hand-embroidered kurtas — unstitched and ready-to-wear — and heirloom
-            chaddars, each piece made to be loved for years.
+            Hand-embroidered kurtas in 2-piece &amp; 3-piece styles, each piece made
+            to be loved for years.
           </p>
           <div className="flex flex-wrap gap-3 justify-center md:justify-start">
             <Link

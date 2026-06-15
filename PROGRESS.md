@@ -31,8 +31,26 @@
 
 - [x] **Task 14 — Deploy** Repo pushed to GitHub (`UsamaBarkat/solace-by-fia`), connected to Vercel, auto-deploys on push to `master`.
 
-## 🎉 Project complete — all 14 tasks done
+## 🎉 v1 complete — all 14 tasks done
 
 **Live URL: https://solace-by-fia.vercel.app**
 
 Lighthouse (production): Performance 96 · Accessibility 100. Spec success criteria met: 3 collections, 9 products, WhatsApp ordering on every product, sticky WhatsApp button, mobile-first at 360px, petals behind content + disabled under reduced-motion.
+
+---
+
+## v1.1 — Structure update (see `STRUCTURE-UPDATE-SPEC.md`)
+
+Reorganised the site from **fabric categories** (unstitched/stitched/chaddar) to **piece count (2pc / 3pc) + sale status**. Structure only — sample products kept as placeholders; real product data lands in a later round.
+
+- [x] **Task 1 — Data model + helpers** Added `pieceCount` ("2pc"|"3pc") and `isNew` to every product in `products.json` (5×2pc / 4×3pc; 5 New; 8 Clearance). `lib/products.ts`: added `getByPieceCount`, `getNewArrivals`, `getClearance`; `getRelated` now relates by `pieceCount`; `getByCategory` kept temporarily (consumers removed in Task 6).
+- [x] **Task 2 — Navigation** Header + mobile drawer menu → Home · New Arrivals · Shop · Clearance · Reviews · Contact. About dropped from menu, kept in footer. Footer Explore links updated to match.
+- [x] **Task 3 — New Arrivals page** `/new-arrivals` renders `getNewArrivals()` in `ProductGrid` with on-brand header, product count, metadata.
+- [x] **Task 4 — Shop 2pc/3pc filter** `Filters.tsx` replaced category+fabric with a prominent piece-count filter (All / 2pc / 3pc); in-stock toggle kept; fabric removed. `ProductCard` label now shows piece count instead of category. Shop subheading rewritten.
+- [x] **Task 5 — Clearance page** `/clearance` renders `getClearance()` (products with a `salePrice`) with header, count, metadata.
+- [x] **Task 6 — Retire fabric collections** Deleted `/collections/[slug]` route; `getByCategory` removed; `CollectionCard` now takes a generic `href`; product breadcrumb's category crumb removed (`CATEGORY_LABEL` deleted). Home band reheaded "Where to begin" with three cards → New Arrivals / Shop / Clearance.
+- [x] **Task 7 — Contact + delivery info** Contact page wired with real details: WhatsApp `0314 3083863`, WhatsApp Community, Instagram, Facebook (canonical links), + delivery block (TCS all Pakistan, 7–9 days, flat Rs 200). Product Delivery accordion updated to match; Returns left as placeholder with `TODO: client to provide returns policy`. Product detail "Category" meta row → "Piece Count".
+- [x] **Task 8 — Logo** Kept the Fraunces text wordmark; grey-background PDF not used in header; code comment notes a transparent-PNG swap pending from client. Footer Instagram/Facebook updated to canonical links + WhatsApp Community added.
+- [x] **Task 9 — Verify + sync docs** `npm run build` clean; `SOLACE-SHOWCASE-SPEC.md` updated (success criteria, folder structure, data model, pages, tasks, validate) to describe the piece-count + Clearance structure; stale "unstitched/stitched/chaddar as categories" copy swept (hero, footer, about, layout/home/shop metadata); this `PROGRESS.md` updated.
+
+> Pending from client: real product data, design references for a theme round, returns policy, transparent-PNG logo. Size Guide on the product page still references unstitched/stitched as genuine garment types (accurate to the catalog), not as navigation.

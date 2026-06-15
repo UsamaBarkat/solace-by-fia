@@ -5,12 +5,12 @@ import { usePathname } from "next/navigation";
 import { useState } from "react";
 
 const NAV = [
-  { href: "/",                        label: "Home" },
-  { href: "/shop",                    label: "Shop" },
-  { href: "/collections/unstitched",  label: "Collections" },
-  { href: "/about",                   label: "About" },
-  { href: "/reviews",                 label: "Reviews" },
-  { href: "/contact",                 label: "Contact" },
+  { href: "/",              label: "Home" },
+  { href: "/new-arrivals",  label: "New Arrivals" },
+  { href: "/shop",          label: "Shop" },
+  { href: "/clearance",     label: "Clearance" },
+  { href: "/reviews",       label: "Reviews" },
+  { href: "/contact",       label: "Contact" },
 ];
 
 export default function Header() {
@@ -24,7 +24,10 @@ export default function Header() {
     <header className="sticky top-0 z-50 bg-white/90 backdrop-blur-sm border-b border-petal">
       <div className="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
 
-        {/* Logo */}
+        {/* Logo — Fraunces text wordmark.
+            TODO: swap for a transparent-PNG logo when the client provides one.
+            The supplied logo is a PDF on a grey background, unsuitable for the white
+            header, so we keep the clean text wordmark for now. */}
         <Link
           href="/"
           onClick={() => setOpen(false)}

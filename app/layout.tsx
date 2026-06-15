@@ -20,7 +20,7 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: "Solace by Fia",
-  description: "Women's clothing — unstitched, stitched, chaddar",
+  description: "Hand-embroidered women's clothing — 2-piece & 3-piece styles. Order on WhatsApp.",
 };
 
 export default function RootLayout({

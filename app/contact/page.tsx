@@ -10,21 +10,27 @@ export const metadata: Metadata = {
 const SOCIALS = [
   {
     label: "WhatsApp",
-    handle: "+92 314 3083863",
+    handle: "0314 3083863",
     note: "Fastest way to order — we usually reply within the hour.",
     href: buildWhatsAppLink(),
+  },
+  {
+    label: "WhatsApp Community",
+    handle: "Join the group",
+    note: "First looks at new arrivals, restocks and sale alerts.",
+    href: "https://chat.whatsapp.com/ItHe8FGLBqIALfrpM9m9yO",
   },
   {
     label: "Instagram",
     handle: "@solacebyfia",
     note: "New arrivals, behind-the-scenes and styling ideas.",
-    href: "https://instagram.com/solacebyfia",
+    href: "https://www.instagram.com/solacebyfia",
   },
   {
     label: "Facebook",
     handle: "Solace by Fia",
     note: "Collection updates and announcements.",
-    href: "https://facebook.com/solacebyfia",
+    href: "https://www.facebook.com/share/17oXZL8cFD/",
   },
 ];
 
@@ -69,12 +75,29 @@ export default function ContactPage() {
         ))}
       </ul>
 
-      <div className="mt-10 bg-petal/60 rounded-2xl px-6 py-5 text-center">
-        <p className="font-body text-sm text-ink/70 leading-relaxed">
-          Ordering is simple: send us the product name or code on WhatsApp, and
-          we&rsquo;ll confirm availability, price and delivery. Cash on delivery
-          available across Pakistan.
+      <div className="mt-10 bg-petal/60 rounded-2xl px-6 py-6">
+        <p className="font-body text-xs uppercase tracking-widest text-ink/70 mb-3 text-center">
+          Delivery &amp; ordering
         </p>
+        <ul role="list" className="space-y-2 max-w-md mx-auto">
+          <li className="font-body text-sm text-ink/80 flex gap-2">
+            <span aria-hidden="true" className="text-rose">•</span>
+            Shipping all over Pakistan via <span className="font-medium">TCS</span>.
+          </li>
+          <li className="font-body text-sm text-ink/80 flex gap-2">
+            <span aria-hidden="true" className="text-rose">•</span>
+            Delivery in <span className="font-medium">7–9 days</span>.
+          </li>
+          <li className="font-body text-sm text-ink/80 flex gap-2">
+            <span aria-hidden="true" className="text-rose">•</span>
+            Flat delivery charge of <span className="font-medium">Rs 200</span> nationwide.
+          </li>
+          <li className="font-body text-sm text-ink/80 flex gap-2">
+            <span aria-hidden="true" className="text-rose">•</span>
+            Send the product name or code on WhatsApp and we&rsquo;ll confirm
+            availability, price and delivery.
+          </li>
+        </ul>
       </div>
     </div>
   );

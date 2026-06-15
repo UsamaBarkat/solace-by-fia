@@ -3,7 +3,7 @@ import Link from "next/link";
 import type { Product } from "@/lib/products";
 
 export default function ProductCard({ product }: { product: Product }) {
-  const { code, name, category, price, salePrice, inStock, badges, images } = product;
+  const { code, name, pieceCount, price, salePrice, inStock, badges, images } = product;
 
   return (
     <Link
@@ -61,7 +61,7 @@ export default function ProductCard({ product }: { product: Product }) {
 
       {/* Info */}
       <div className="mt-3 px-0.5 space-y-1">
-        <p className="font-body text-xs uppercase tracking-widest text-ink/70">{category}</p>
+        <p className="font-body text-xs uppercase tracking-widest text-ink/70">{pieceCount}</p>
         <h3 className="font-display text-base text-ink leading-snug group-hover:text-rose transition-colors">
           {name}
         </h3>
