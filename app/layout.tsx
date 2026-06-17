@@ -5,6 +5,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import FloatingPetals from "@/components/FloatingPetals";
 import WhatsAppButton from "@/components/WhatsAppButton";
+import Analytics from "@/components/Analytics";
 
 const fraunces = Fraunces({
   subsets: ["latin"],
@@ -50,6 +51,9 @@ export default function RootLayout({
 
         {/* Sticky WhatsApp button — fixed, always on top */}
         <WhatsAppButton />
+
+        {/* GA4 (loads only when NEXT_PUBLIC_GA_ID is set) */}
+        <Analytics />
       </body>
     </html>
   );

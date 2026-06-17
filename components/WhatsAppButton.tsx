@@ -1,4 +1,7 @@
+"use client";
+
 import { buildWhatsAppLink } from "@/lib/whatsapp";
+import { trackWhatsAppOrderClick } from "@/lib/analytics";
 
 export default function WhatsAppButton() {
   return (
@@ -7,6 +10,7 @@ export default function WhatsAppButton() {
       target="_blank"
       rel="noopener noreferrer"
       aria-label="Order on WhatsApp"
+      onClick={() => trackWhatsAppOrderClick()}
       className="fixed bottom-5 right-4 z-50 flex items-center gap-2 bg-rose text-white font-body text-sm font-medium pl-4 pr-5 py-3 rounded-full shadow-lg hover:bg-rose/90 active:scale-95 transition-all focus-visible:outline-2 focus-visible:outline-rose focus-visible:outline-offset-2"
     >
       <WhatsAppIcon />

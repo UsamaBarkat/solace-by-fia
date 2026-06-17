@@ -32,6 +32,8 @@ yarn-error.log*
 
 # env files (can opt-in for committing if needed)
 .env*
+# committed: holds only the public GA4 measurement ID (not a secret)
+!.env.production
 
 # vercel
 .vercel
