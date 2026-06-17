@@ -173,16 +173,27 @@ export default async function ProductPage({ params }: Props) {
                 </p>
               </Accordion>
 
-              {/* TODO: client to provide returns policy */}
               <Accordion title="Returns & Exchanges">
                 <p>
-                  Unused, unaltered items in original packaging may be exchanged within 7 days of
-                  delivery. Please WhatsApp us a photo of the item before returning.
+                  <span className="font-medium">Returns &amp; Exchange Policy</span> (Exchange
+                  only — no refunds).
                 </p>
-                <p className="mt-2">
-                  Stitched-to-order and sale items are final sale. Return shipping is the
-                  customer&apos;s responsibility.
-                </p>
+                <ol className="mt-2 list-decimal pl-5 space-y-1.5">
+                  <li>
+                    Exchange is valid within 3 days of purchase, on a valid reason, after the
+                    case is checked and confirmed.
+                  </li>
+                  <li>
+                    For an exchange, the customer is responsible for all shipping and handling
+                    costs.
+                  </li>
+                  <li>
+                    Exchanges are issued as Solace Cash — you can purchase anything of the same
+                    or higher value.
+                  </li>
+                  <li>Unstitched articles, once stitched, cannot be exchanged.</li>
+                  <li>Discounted items cannot be returned or exchanged.</li>
+                </ol>
               </Accordion>
             </div>
           </div>
