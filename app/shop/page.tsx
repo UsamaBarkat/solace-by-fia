@@ -18,7 +18,7 @@ export default function ShopPage() {
       </p>
       <h1 className="font-display text-4xl text-ink mb-2">Shop All</h1>
       <p className="font-body text-sm text-ink/70 mb-8">
-        Hand-embroidered kurtas in 2pc &amp; 3pc — handcrafted with love.
+        Hand-embroidered Pima lawn kurtas — 1-piece, handcrafted with love.
       </p>
 
       <ShopClient products={products} />

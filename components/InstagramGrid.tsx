@@ -1,16 +1,16 @@
 import Image from "next/image";
 
-const IG_URL = "https://instagram.com/solacebyfia";
+const IG_URL = "https://www.instagram.com/solacebyfia";
 
 /* Curated static grid (spec §1.4: no live Instagram API in v1).
-   Images live in /public/instagram/; every tile links to the profile. */
+   Uses 6 of the current product photos; every tile links to the profile. */
 const POSTS = [
-  { src: "/instagram/post-1.jpg", alt: "Pink fabric with tone-on-tone rose embroidery" },
-  { src: "/instagram/post-2.jpg", alt: "Navy kurta with white and pink floral embroidery" },
-  { src: "/instagram/post-3.jpg", alt: "Pink kurta embroidered with teal florals" },
-  { src: "/instagram/post-4.jpg", alt: "Off-white fabric with wisteria-purple floral sprays" },
-  { src: "/instagram/post-5.jpg", alt: "Sage kurta fabric with coral floral vines" },
-  { src: "/instagram/post-6.jpg", alt: "Periwinkle-blue kurta with violet floral embroidery" },
+  { src: "/products/sbf-hk-001.jpg", alt: "Heavy embroidered Pima lawn kurta in lavender purple" },
+  { src: "/products/sbf-hk-002.jpg", alt: "Heavy embroidered Pima lawn kurta in pink" },
+  { src: "/products/sbf-hk-005.jpg", alt: "Heavy embroidered Pima lawn kurta in black with multicolour florals" },
+  { src: "/products/sbf-hk-014.jpg", alt: "Heavy embroidered Pima lawn kurta in forest green" },
+  { src: "/products/sbf-hk-016.jpg", alt: "Heavy embroidered Pima lawn kurta in shocking pink on lemon" },
+  { src: "/products/sbf-hk-020.jpg", alt: "Heavy embroidered Pima lawn kurta in peach" },
 ];
 
 export default function InstagramGrid() {

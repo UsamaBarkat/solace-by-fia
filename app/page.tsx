@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { getAll, getClearance, getAllReviews, type Product } from "@/lib/products";
+import { getAll, getByCode, getAllReviews, type Product } from "@/lib/products";
 import { buildWhatsAppLink } from "@/lib/whatsapp";
 import Hero from "@/components/Hero";
 import CollectionCard from "@/components/CollectionCard";
@@ -22,18 +22,15 @@ function Hairline() {
 export default function Home() {
   const products = getAll();
   const newArrivals = products.filter((p) => p.badges?.includes("New")).slice(0, 4);
-  const clearance = getClearance();
   const reviews = getAllReviews().slice(0, 3);
   const heroProduct = products[0];
 
-  // Three entry points into the shop (replaces the old fabric collections)
-  const shopCover: Product =
-    products.find((p) => !p.badges?.includes("New") && p.salePrice === undefined) ??
-    products[0];
+  // Three entry points into the shop (replaces the old fabric collections),
+  // each with a distinct product cover image.
   const sections: { href: string; title: string; tagline: string; coverProduct: Product }[] = [
-    { href: "/new-arrivals", title: "New Arrivals", tagline: "Just in",  coverProduct: newArrivals[0] },
-    { href: "/shop",         title: "2pc & 3pc",    tagline: "Shop all", coverProduct: shopCover },
-    { href: "/clearance",    title: "Clearance",    tagline: "Reduced",  coverProduct: clearance[clearance.length - 1] },
+    { href: "/new-arrivals", title: "New Arrivals", tagline: "Just in",  coverProduct: getByCode("SBF-HK-003")! },
+    { href: "/shop",         title: "Shop all",     tagline: "Browse",   coverProduct: getByCode("SBF-HK-014")! },
+    { href: "/clearance",    title: "Clearance",    tagline: "Reduced",  coverProduct: getByCode("SBF-HK-012")! },
   ];
 
   return (

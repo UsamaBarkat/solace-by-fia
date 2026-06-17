@@ -3,7 +3,7 @@ import reviewsData from "@/data/reviews.json";
 
 export type Category = "unstitched" | "stitched" | "chaddar";
 
-export type PieceCount = "2pc" | "3pc";
+export type PieceCount = "1pc" | "2pc" | "3pc";
 
 export interface ProductImages {
   front: string;

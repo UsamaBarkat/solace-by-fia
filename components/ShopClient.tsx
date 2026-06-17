@@ -10,8 +10,16 @@ const DEFAULT_FILTERS: FilterState = {
   inStockOnly: false,
 };
 
+const PIECE_ORDER = ["1pc", "2pc", "3pc"];
+
 export default function ShopClient({ products }: { products: Product[] }) {
   const [filters, setFilters] = useState<FilterState>(DEFAULT_FILTERS);
+
+  // Only offer piece-count options that actually have products, in a stable order.
+  const pieceCounts = useMemo(() => {
+    const present = new Set(products.map((p) => p.pieceCount));
+    return PIECE_ORDER.filter((p) => present.has(p as Product["pieceCount"]));
+  }, [products]);
 
   const filtered = useMemo(
     () =>
@@ -25,7 +33,7 @@ export default function ShopClient({ products }: { products: Product[] }) {
 
   return (
     <div className="space-y-6">
-      <Filters value={filters} onChange={setFilters} />
+      <Filters pieceCounts={pieceCounts} value={filters} onChange={setFilters} />
 
       <p className="font-body text-sm text-ink/70" aria-live="polite" aria-atomic="true">
         {filtered.length === products.length

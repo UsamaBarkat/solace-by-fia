@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
@@ -24,16 +25,21 @@ export default function Header() {
     <header className="sticky top-0 z-50 bg-white/90 backdrop-blur-sm border-b border-petal">
       <div className="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
 
-        {/* Logo — Fraunces text wordmark.
-            TODO: swap for a transparent-PNG logo when the client provides one.
-            The supplied logo is a PDF on a grey background, unsuitable for the white
-            header, so we keep the clean text wordmark for now. */}
+        {/* Logo */}
         <Link
           href="/"
           onClick={() => setOpen(false)}
-          className="font-display text-xl text-rose focus-visible:outline-2 focus-visible:outline-rose"
+          aria-label="Solace by Fia — home"
+          className="rounded focus-visible:outline-2 focus-visible:outline-rose focus-visible:outline-offset-2"
         >
-          Solace by Fia
+          <Image
+            src="/solace-logo-wordmark.png"
+            alt="Solace by Fia"
+            width={157}
+            height={56}
+            priority
+            className="h-11 w-auto md:h-14"
+          />
         </Link>
 
         {/* Desktop nav */}

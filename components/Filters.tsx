@@ -6,15 +6,11 @@ export interface FilterState {
 }
 
 interface FiltersProps {
+  /** Piece-count values present in the data, e.g. ["1pc","2pc"] — "All" is prepended. */
+  pieceCounts: string[];
   value: FilterState;
   onChange: (f: FilterState) => void;
 }
-
-const PIECE_COUNTS = [
-  { value: "all", label: "All" },
-  { value: "2pc", label: "2pc" },
-  { value: "3pc", label: "3pc" },
-];
 
 const BASE_FOCUS = "focus-visible:outline-2 focus-visible:outline-rose focus-visible:outline-offset-2";
 
@@ -43,9 +39,11 @@ function Pill({
   );
 }
 
-export default function Filters({ value, onChange }: FiltersProps) {
+export default function Filters({ pieceCounts, value, onChange }: FiltersProps) {
   const set = (patch: Partial<FilterState>) => onChange({ ...value, ...patch });
   const isDefault = value.pieceCount === "all" && !value.inStockOnly;
+
+  const options = [{ value: "all", label: "All" }, ...pieceCounts.map((p) => ({ value: p, label: p }))];
 
   return (
     <div className="bg-petal/60 rounded-2xl px-5 py-5 space-y-5">
@@ -55,7 +53,7 @@ export default function Filters({ value, onChange }: FiltersProps) {
           Pieces
         </legend>
         <div className="flex flex-wrap gap-2">
-          {PIECE_COUNTS.map(({ value: v, label }) => (
+          {options.map(({ value: v, label }) => (
             <Pill key={v} active={value.pieceCount === v} onClick={() => set({ pieceCount: v })}>
               {label}
             </Pill>

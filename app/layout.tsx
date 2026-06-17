@@ -19,8 +19,15 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://solace-by-fia.vercel.app"),
   title: "Solace by Fia",
   description: "Hand-embroidered women's clothing — 2-piece & 3-piece styles. Order on WhatsApp.",
+  icons: { icon: "/solace-logo-full.png" },
+  openGraph: {
+    title: "Solace by Fia",
+    description: "Hand-embroidered women's clothing — 2-piece & 3-piece styles. Order on WhatsApp.",
+    images: ["/solace-logo-full.png"],
+  },
 };
 
 export default function RootLayout({

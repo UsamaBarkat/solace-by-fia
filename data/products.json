@@ -1,180 +1,422 @@
 [
   {
-    "code": "SBF-LWN-001",
-    "name": "Hand-Embroidered Unstitched Kurta — Rose Pink",
+    "code": "SBF-HK-001",
+    "name": "Heavy Embroidered Pima Lawn Kurta — Lavender Purple",
     "category": "unstitched",
-    "collection": "Unstitched Kurtas",
-    "fabric": "Cotton Lawn",
-    "pieces": "1 Piece — Unstitched Kurta Fabric",
-    "pieceCount": "3pc",
-    "isNew": true,
-    "price": 6800,
-    "salePrice": 5800,
-    "inStock": true,
-    "badges": ["Sale", "New"],
-    "images": {
-      "front": "/products/sbf-lwn-001-front.jpg",
-      "back": "/products/sbf-lwn-001-front.jpg",
-      "closeup": "/products/sbf-lwn-001-front.jpg"
-    },
-    "description": "Rose-pink kurta fabric covered in dense multicolour hand-embroidery — roses, violets and leafy vines worked in resham thread from the neckline to the hem. Sold unstitched so your tailor can cut it exactly to your fit."
-  },
-  {
-    "code": "SBF-LWN-002",
-    "name": "Hand-Embroidered Unstitched Kurta — Sage",
-    "category": "unstitched",
-    "collection": "Unstitched Kurtas",
-    "fabric": "Cotton Lawn",
-    "pieces": "1 Piece — Unstitched Kurta Fabric",
-    "pieceCount": "2pc",
-    "isNew": true,
-    "price": 6800,
-    "salePrice": 6500,
-    "inStock": true,
-    "badges": ["Sale", "New"],
-    "images": {
-      "front": "/products/sbf-lwn-002-front.jpg",
-      "back": "/products/sbf-lwn-002-front.jpg",
-      "closeup": "/products/sbf-lwn-002-front.jpg"
-    },
-    "description": "Sage-toned kurta fabric with coral and ivory florals worked in climbing vines, finished with a beaded coral trim line down the front. Sold unstitched and ready for your tailor."
-  },
-  {
-    "code": "SBF-CHF-001",
-    "name": "Embroidered Unstitched Kurta — Wisteria",
-    "category": "unstitched",
-    "collection": "Unstitched Kurtas",
-    "fabric": "Cotton Lawn",
-    "pieces": "1 Piece — Unstitched Kurta Fabric",
-    "pieceCount": "3pc",
-    "isNew": false,
-    "price": 7200,
-    "salePrice": 6200,
-    "inStock": true,
-    "badges": ["Sale"],
-    "images": {
-      "front": "/products/sbf-chf-001-front.jpg",
-      "back": "/products/sbf-chf-001-front.jpg",
-      "closeup": "/products/sbf-chf-001-front.jpg"
-    },
-    "description": "Crisp off-white kurta fabric scattered with wisteria-purple floral sprays and fine vinework — light, airy handwork for everyday elegance. Sold unstitched, ready for your tailor."
-  },
-  {
-    "code": "SBF-STD-001",
-    "name": "Chikankari Mirror-Work Kurta — Mustard",
-    "category": "stitched",
-    "collection": "Everyday Ease",
-    "fabric": "Cotton",
-    "pieces": "1 Piece — Stitched Kurta",
-    "pieceCount": "2pc",
-    "isNew": true,
-    "price": 2800,
-    "salePrice": 2500,
-    "inStock": true,
-    "badges": ["Sale", "New"],
-    "images": {
-      "front": "/products/sbf-std-001-front.jpg",
-      "back": "/products/sbf-std-001-front.jpg",
-      "closeup": "/products/sbf-std-001-front.jpg"
-    },
-    "description": "A ready-to-wear mustard kurta with white chikankari-style embroidery and delicate mirror accents around the neckline and front panel. Bright, festive and easy to style with white or contrast trousers."
-  },
-  {
-    "code": "SBF-STD-002",
-    "name": "Embroidered Kurta — Pink & Teal",
-    "category": "stitched",
-    "collection": "Everyday Ease",
-    "fabric": "Cotton",
-    "pieces": "1 Piece — Stitched Kurta",
-    "pieceCount": "2pc",
-    "isNew": false,
-    "price": 3700,
-    "inStock": true,
-    "images": {
-      "front": "/products/sbf-std-002-front.jpg",
-      "back": "/products/sbf-std-002-front.jpg",
-      "closeup": "/products/sbf-std-002-front.jpg"
-    },
-    "description": "A soft pink kurta embroidered with teal and turquoise florals — denser at the yoke, scattering down the front. Cool-toned handwork on a warm base that works for daytime and casual wear alike."
-  },
-  {
-    "code": "SBF-STD-003",
-    "name": "Heavy Embroidered Kurta — Navy",
-    "category": "stitched",
-    "collection": "Evening Elegance",
-    "fabric": "Cotton",
-    "pieces": "1 Piece — Stitched Kurta",
-    "pieceCount": "3pc",
-    "isNew": false,
-    "price": 6800,
-    "salePrice": 6300,
-    "inStock": false,
-    "badges": ["Sale"],
-    "images": {
-      "front": "/products/sbf-std-003-front.jpg",
-      "back": "/products/sbf-std-003-front.jpg",
-      "closeup": "/products/sbf-std-003-front.jpg"
-    },
-    "description": "A deep navy kurta with dense white, pink and green floral embroidery framing the neckline panel and scattering down the front. Rich evening handwork on a midnight base."
-  },
-  {
-    "code": "SBF-CHD-001",
-    "name": "Heavy Embroidered Kurta — Emerald",
-    "category": "stitched",
-    "collection": "Statement Kurtas",
-    "fabric": "Cotton",
-    "pieces": "1 Piece — Stitched Kurta",
-    "pieceCount": "3pc",
+    "collection": "Heavy Kurta Collection",
+    "fabric": "Pima Lawn",
+    "pieces": "1 Piece — Embroidered Shirt (3 metres)",
+    "pieceCount": "1pc",
     "isNew": true,
     "price": 7200,
     "salePrice": 6500,
     "inStock": true,
-    "badges": ["Sale", "New"],
+    "badges": ["New", "Sale"],
     "images": {
-      "front": "/products/sbf-chd-001-front.jpg",
-      "back": "/products/sbf-chd-001-front.jpg",
-      "closeup": "/products/sbf-chd-001-front.jpg"
+      "front": "/products/sbf-hk-001.jpg",
+      "back": "/products/sbf-hk-001.jpg",
+      "closeup": "/products/sbf-hk-001.jpg"
     },
-    "description": "An emerald-green kurta carrying some of our heaviest handwork — yellow and powder-blue florals embroidered edge to edge, sleeves included. A statement piece for daawats and dinners."
+    "description": "Heavy embroidered Pima lawn kurta in lavender purple. Intense embroidery across the front, heavy embroidered separate sleeves, and embroidered boti on the back. 3-metre shirt piece, can be stitched up to XXXL (chest 27-28 inches)."
   },
   {
-    "code": "SBF-CHD-002",
-    "name": "Heavy Embroidered Kurta — Pink Blossom",
-    "category": "stitched",
-    "collection": "Statement Kurtas",
-    "fabric": "Cotton",
-    "pieces": "1 Piece — Stitched Kurta",
-    "pieceCount": "2pc",
-    "isNew": false,
-    "price": 6800,
-    "salePrice": 6200,
+    "code": "SBF-HK-002",
+    "name": "Heavy Embroidered Pima Lawn Kurta — Pink",
+    "category": "unstitched",
+    "collection": "Heavy Kurta Collection",
+    "fabric": "Pima Lawn",
+    "pieces": "1 Piece — Embroidered Shirt (3 metres)",
+    "pieceCount": "1pc",
+    "isNew": true,
+    "price": 6500,
+    "salePrice": 5500,
     "inStock": true,
-    "badges": ["Sale"],
+    "badges": ["New", "Sale"],
     "images": {
-      "front": "/products/sbf-chd-002-front.jpg",
-      "back": "/products/sbf-chd-002-front.jpg",
-      "closeup": "/products/sbf-chd-002-front.jpg"
+      "front": "/products/sbf-hk-002.jpg",
+      "back": "/products/sbf-hk-002.jpg",
+      "closeup": "/products/sbf-hk-002.jpg"
     },
-    "description": "A cream kurta embroidered all over with pink blossoms and green vinework in thick, hand-laid thread — heavy, joyful handwork in our signature palette."
+    "description": "Heavy embroidered Pima lawn kurta in pink. Intense embroidery across the front, heavy embroidered separate sleeves, and embroidered boti on the back. 3-metre shirt piece, can be stitched up to XXXL (chest 27-28 inches)."
   },
   {
-    "code": "SBF-CHD-003",
-    "name": "Hand-Embroidered Chaddar — Blush Pink",
-    "category": "chaddar",
-    "collection": "Heritage Wraps",
-    "fabric": "Cotton",
-    "pieces": "1 Piece — Chaddar / Shawl",
-    "pieceCount": "2pc",
+    "code": "SBF-HK-003",
+    "name": "Heavy Embroidered Pima Lawn Kurta — Mint with Lilac",
+    "category": "unstitched",
+    "collection": "Heavy Kurta Collection",
+    "fabric": "Pima Lawn",
+    "pieces": "1 Piece — Embroidered Shirt (3 metres)",
+    "pieceCount": "1pc",
     "isNew": true,
     "price": 6800,
     "salePrice": 6500,
     "inStock": true,
-    "badges": ["Sale", "New"],
+    "badges": ["New", "Sale"],
     "images": {
-      "front": "/products/sbf-chd-003-front.jpg",
-      "back": "/products/sbf-chd-003-front.jpg",
-      "closeup": "/products/sbf-chd-003-front.jpg"
+      "front": "/products/sbf-hk-003.jpg",
+      "back": "/products/sbf-hk-003.jpg",
+      "closeup": "/products/sbf-hk-003.jpg"
     },
-    "description": "A blush-pink chaddar with tone-on-tone rose embroidery and subtle shimmer accents worked across the full drape. Soft, romantic handwork that turns a simple outfit into an occasion."
+    "description": "Heavy embroidered Pima lawn kurta in mint with lilac. Intense embroidery across the front, heavy embroidered separate sleeves, and embroidered boti on the back. 3-metre shirt piece, can be stitched up to XXXL (chest 27-28 inches)."
+  },
+  {
+    "code": "SBF-HK-004",
+    "name": "Heavy Embroidered Pima Lawn Kurta — Purple Monochrome",
+    "category": "unstitched",
+    "collection": "Heavy Kurta Collection",
+    "fabric": "Pima Lawn",
+    "pieces": "1 Piece — Embroidered Shirt (3 metres)",
+    "pieceCount": "1pc",
+    "isNew": true,
+    "price": 6800,
+    "salePrice": 6500,
+    "inStock": true,
+    "badges": ["New", "Sale"],
+    "images": {
+      "front": "/products/sbf-hk-004.jpg",
+      "back": "/products/sbf-hk-004.jpg",
+      "closeup": "/products/sbf-hk-004.jpg"
+    },
+    "description": "Heavy embroidered Pima lawn kurta in purple monochrome. Intense embroidery across the front, heavy embroidered separate sleeves, and embroidered boti on the back. 3-metre shirt piece, can be stitched up to XXXL (chest 27-28 inches)."
+  },
+  {
+    "code": "SBF-HK-005",
+    "name": "Heavy Embroidered Pima Lawn Kurta — Black Multi",
+    "category": "unstitched",
+    "collection": "Heavy Kurta Collection",
+    "fabric": "Pima Lawn",
+    "pieces": "1 Piece — Embroidered Shirt (3 metres)",
+    "pieceCount": "1pc",
+    "isNew": true,
+    "price": 6800,
+    "salePrice": 6500,
+    "inStock": true,
+    "badges": ["New", "Sale"],
+    "images": {
+      "front": "/products/sbf-hk-005.jpg",
+      "back": "/products/sbf-hk-005.jpg",
+      "closeup": "/products/sbf-hk-005.jpg"
+    },
+    "description": "Heavy embroidered Pima lawn kurta in black with multicolour florals. Intense embroidery across the front, heavy embroidered separate sleeves, and embroidered boti on the back. 3-metre shirt piece, can be stitched up to XXXL (chest 27-28 inches)."
+  },
+  {
+    "code": "SBF-HK-006",
+    "name": "Heavy Embroidered Pima Lawn Kurta — Mint with Brown",
+    "category": "unstitched",
+    "collection": "Heavy Kurta Collection",
+    "fabric": "Pima Lawn",
+    "pieces": "1 Piece — Embroidered Shirt (3 metres)",
+    "pieceCount": "1pc",
+    "isNew": true,
+    "price": 7200,
+    "salePrice": 6500,
+    "inStock": true,
+    "badges": ["New", "Sale"],
+    "images": {
+      "front": "/products/sbf-hk-006.jpg",
+      "back": "/products/sbf-hk-006.jpg",
+      "closeup": "/products/sbf-hk-006.jpg"
+    },
+    "description": "Heavy embroidered Pima lawn kurta in mint with brown. Intense embroidery across the front, heavy embroidered separate sleeves, and embroidered boti on the back. 3-metre shirt piece, can be stitched up to XXXL (chest 27-28 inches)."
+  },
+  {
+    "code": "SBF-HK-007",
+    "name": "Heavy Embroidered Pima Lawn Kurta — Lavender on Pale Peach",
+    "category": "unstitched",
+    "collection": "Heavy Kurta Collection",
+    "fabric": "Pima Lawn",
+    "pieces": "1 Piece — Embroidered Shirt (3 metres)",
+    "pieceCount": "1pc",
+    "isNew": true,
+    "price": 7200,
+    "salePrice": 6000,
+    "inStock": true,
+    "badges": ["New", "Sale"],
+    "images": {
+      "front": "/products/sbf-hk-007.jpg",
+      "back": "/products/sbf-hk-007.jpg",
+      "closeup": "/products/sbf-hk-007.jpg"
+    },
+    "description": "Heavy embroidered Pima lawn kurta in lavender on pale peach. Exclusive bunch piece — has slight marks. Intense embroidery across the front, heavy embroidered separate sleeves, and embroidered boti on the back. 3-metre shirt piece, can be stitched up to XXXL (chest 27-28 inches)."
+  },
+  {
+    "code": "SBF-HK-008",
+    "name": "Heavy Embroidered Pima Lawn Kurta — Black on Black",
+    "category": "unstitched",
+    "collection": "Heavy Kurta Collection",
+    "fabric": "Pima Lawn",
+    "pieces": "1 Piece — Embroidered Shirt (3 metres)",
+    "pieceCount": "1pc",
+    "isNew": true,
+    "price": 6800,
+    "salePrice": 6500,
+    "inStock": true,
+    "badges": ["New", "Sale"],
+    "images": {
+      "front": "/products/sbf-hk-008.jpg",
+      "back": "/products/sbf-hk-008.jpg",
+      "closeup": "/products/sbf-hk-008.jpg"
+    },
+    "description": "Heavy embroidered Pima lawn kurta in tonal black on black. Intense embroidery across the front, heavy embroidered separate sleeves, and embroidered boti on the back. 3-metre shirt piece, can be stitched up to XXXL (chest 27-28 inches)."
+  },
+  {
+    "code": "SBF-HK-009",
+    "name": "Heavy Embroidered Pima Lawn Kurta — Purple & Lavender",
+    "category": "unstitched",
+    "collection": "Heavy Kurta Collection",
+    "fabric": "Pima Lawn",
+    "pieces": "1 Piece — Embroidered Shirt (3 metres)",
+    "pieceCount": "1pc",
+    "isNew": true,
+    "price": 6800,
+    "salePrice": 6500,
+    "inStock": true,
+    "badges": ["New", "Sale"],
+    "images": {
+      "front": "/products/sbf-hk-009.jpg",
+      "back": "/products/sbf-hk-009.jpg",
+      "closeup": "/products/sbf-hk-009.jpg"
+    },
+    "description": "Heavy embroidered Pima lawn kurta in purple and lavender. Intense embroidery across the front, heavy embroidered separate sleeves, and embroidered boti on the back. 3-metre shirt piece, can be stitched up to XXXL (chest 27-28 inches)."
+  },
+  {
+    "code": "SBF-HK-010",
+    "name": "Heavy Embroidered Pima Lawn Kurta — Pastels on Mauve",
+    "category": "unstitched",
+    "collection": "Heavy Kurta Collection",
+    "fabric": "Pima Lawn",
+    "pieces": "1 Piece — Embroidered Shirt (3 metres)",
+    "pieceCount": "1pc",
+    "isNew": true,
+    "price": 7200,
+    "salePrice": 6800,
+    "inStock": true,
+    "badges": ["New", "Sale"],
+    "images": {
+      "front": "/products/sbf-hk-010.jpg",
+      "back": "/products/sbf-hk-010.jpg",
+      "closeup": "/products/sbf-hk-010.jpg"
+    },
+    "description": "Heavy embroidered Pima lawn kurta in pastels on mauve. Exclusive mirror-work piece. Intense embroidery across the front, heavy embroidered separate sleeves, and embroidered boti on the back. 3-metre shirt piece, can be stitched up to XXXL (chest 27-28 inches)."
+  },
+  {
+    "code": "SBF-HK-011",
+    "name": "Heavy Embroidered Pima Lawn Kurta — Multi on Off-White",
+    "category": "unstitched",
+    "collection": "Heavy Kurta Collection",
+    "fabric": "Pima Lawn",
+    "pieces": "1 Piece — Embroidered Shirt (3 metres)",
+    "pieceCount": "1pc",
+    "isNew": true,
+    "price": 6800,
+    "salePrice": 6500,
+    "inStock": true,
+    "badges": ["New", "Sale"],
+    "images": {
+      "front": "/products/sbf-hk-011.jpg",
+      "back": "/products/sbf-hk-011.jpg",
+      "closeup": "/products/sbf-hk-011.jpg"
+    },
+    "description": "Heavy embroidered Pima lawn kurta in multicolour on off-white. Intense embroidery across the front, heavy embroidered separate sleeves, and embroidered boti on the back. 3-metre shirt piece, can be stitched up to XXXL (chest 27-28 inches)."
+  },
+  {
+    "code": "SBF-HK-012",
+    "name": "Heavy Embroidered Pima Lawn Kurta — Pink & Off-White on Dhani",
+    "category": "unstitched",
+    "collection": "Heavy Kurta Collection",
+    "fabric": "Pima Lawn",
+    "pieces": "1 Piece — Embroidered Shirt (3 metres)",
+    "pieceCount": "1pc",
+    "isNew": true,
+    "price": 6800,
+    "salePrice": 5990,
+    "inStock": true,
+    "badges": ["New", "Sale"],
+    "images": {
+      "front": "/products/sbf-hk-012.jpg",
+      "back": "/products/sbf-hk-012.jpg",
+      "closeup": "/products/sbf-hk-012.jpg"
+    },
+    "description": "Heavy embroidered Pima lawn kurta in pink and off-white on dhani green. Intense embroidery across the front, heavy embroidered separate sleeves, and embroidered boti on the back. 3-metre shirt piece, can be stitched up to XXXL (chest 27-28 inches)."
+  },
+  {
+    "code": "SBF-HK-013",
+    "name": "Heavy Embroidered Pima Lawn Kurta — White on Shocking Pink",
+    "category": "unstitched",
+    "collection": "Heavy Kurta Collection",
+    "fabric": "Pima Lawn",
+    "pieces": "1 Piece — Embroidered Shirt (3 metres)",
+    "pieceCount": "1pc",
+    "isNew": true,
+    "price": 6800,
+    "salePrice": 6500,
+    "inStock": true,
+    "badges": ["New", "Sale"],
+    "images": {
+      "front": "/products/sbf-hk-013.jpg",
+      "back": "/products/sbf-hk-013.jpg",
+      "closeup": "/products/sbf-hk-013.jpg"
+    },
+    "description": "Khadeja special. Heavy embroidered Pima lawn kurta in white on shocking pink. Intense embroidery across the front, heavy embroidered separate sleeves, and embroidered boti on the back. 3-metre shirt piece, can be stitched up to XXXL (chest 27-28 inches)."
+  },
+  {
+    "code": "SBF-HK-014",
+    "name": "Heavy Embroidered Pima Lawn Kurta — Forest Green",
+    "category": "unstitched",
+    "collection": "Heavy Kurta Collection",
+    "fabric": "Pima Lawn",
+    "pieces": "1 Piece — Embroidered Shirt (3 metres)",
+    "pieceCount": "1pc",
+    "isNew": true,
+    "price": 7200,
+    "salePrice": 6500,
+    "inStock": true,
+    "badges": ["New", "Sale"],
+    "images": {
+      "front": "/products/sbf-hk-014.jpg",
+      "back": "/products/sbf-hk-014.jpg",
+      "closeup": "/products/sbf-hk-014.jpg"
+    },
+    "description": "Heavy embroidered Pima lawn kurta in forest green. Intense embroidery across the front, heavy embroidered separate sleeves, and embroidered boti on the back. 3-metre shirt piece, can be stitched up to XXXL (chest 27-28 inches)."
+  },
+  {
+    "code": "SBF-HK-015",
+    "name": "Heavy Embroidered Pima Lawn Kurta — Lilac on Skin",
+    "category": "unstitched",
+    "collection": "Heavy Kurta Collection",
+    "fabric": "Pima Lawn",
+    "pieces": "1 Piece — Embroidered Shirt (3 metres)",
+    "pieceCount": "1pc",
+    "isNew": true,
+    "price": 6800,
+    "salePrice": 6500,
+    "inStock": true,
+    "badges": ["New", "Sale"],
+    "images": {
+      "front": "/products/sbf-hk-015.jpg",
+      "back": "/products/sbf-hk-015.jpg",
+      "closeup": "/products/sbf-hk-015.jpg"
+    },
+    "description": "Heavy embroidered Pima lawn kurta in lilac on skin. Intense embroidery across the front, heavy embroidered separate sleeves, and embroidered boti on the back. 3-metre shirt piece, can be stitched up to XXXL (chest 27-28 inches)."
+  },
+  {
+    "code": "SBF-HK-016",
+    "name": "Heavy Embroidered Pima Lawn Kurta — Shocking Pink on Lemon",
+    "category": "unstitched",
+    "collection": "Heavy Kurta Collection",
+    "fabric": "Pima Lawn",
+    "pieces": "1 Piece — Embroidered Shirt (3 metres)",
+    "pieceCount": "1pc",
+    "isNew": true,
+    "price": 6800,
+    "salePrice": 6200,
+    "inStock": true,
+    "badges": ["New", "Sale"],
+    "images": {
+      "front": "/products/sbf-hk-016.jpg",
+      "back": "/products/sbf-hk-016.jpg",
+      "closeup": "/products/sbf-hk-016.jpg"
+    },
+    "description": "Heavy embroidered Pima lawn kurta in shocking pink on lemon. Intense embroidery across the front, heavy embroidered separate sleeves, and embroidered boti on the back. 3-metre shirt piece, can be stitched up to XXXL (chest 27-28 inches)."
+  },
+  {
+    "code": "SBF-HK-017",
+    "name": "Heavy Embroidered Pima Lawn Kurta — Raspberry on Coffee",
+    "category": "unstitched",
+    "collection": "Heavy Kurta Collection",
+    "fabric": "Pima Lawn",
+    "pieces": "1 Piece — Embroidered Shirt (3 metres)",
+    "pieceCount": "1pc",
+    "isNew": true,
+    "price": 6800,
+    "salePrice": 6200,
+    "inStock": true,
+    "badges": ["New", "Sale"],
+    "images": {
+      "front": "/products/sbf-hk-017.jpg",
+      "back": "/products/sbf-hk-017.jpg",
+      "closeup": "/products/sbf-hk-017.jpg"
+    },
+    "description": "Heavy embroidered Pima lawn kurta in raspberry on coffee. Intense embroidery across the front, heavy embroidered separate sleeves, and embroidered boti on the back. 3-metre shirt piece, can be stitched up to XXXL (chest 27-28 inches)."
+  },
+  {
+    "code": "SBF-HK-018",
+    "name": "Heavy Embroidered Pima Lawn Kurta — Pink on Jet Black",
+    "category": "unstitched",
+    "collection": "Heavy Kurta Collection",
+    "fabric": "Pima Lawn",
+    "pieces": "1 Piece — Embroidered Shirt (3 metres)",
+    "pieceCount": "1pc",
+    "isNew": true,
+    "price": 6800,
+    "salePrice": 6200,
+    "inStock": true,
+    "badges": ["New", "Sale"],
+    "images": {
+      "front": "/products/sbf-hk-018.jpg",
+      "back": "/products/sbf-hk-018.jpg",
+      "closeup": "/products/sbf-hk-018.jpg"
+    },
+    "description": "Heavy embroidered Pima lawn kurta in pink on jet black. Intense embroidery across the front, heavy embroidered separate sleeves, and embroidered boti on the back. 3-metre shirt piece, can be stitched up to XXXL (chest 27-28 inches)."
+  },
+  {
+    "code": "SBF-HK-019",
+    "name": "Heavy Embroidered Pima Lawn Kurta — White on Ice Blue",
+    "category": "unstitched",
+    "collection": "Heavy Kurta Collection",
+    "fabric": "Pima Lawn",
+    "pieces": "1 Piece — Embroidered Shirt (3 metres)",
+    "pieceCount": "1pc",
+    "isNew": true,
+    "price": 6800,
+    "salePrice": 6200,
+    "inStock": true,
+    "badges": ["New", "Sale"],
+    "images": {
+      "front": "/products/sbf-hk-019.jpg",
+      "back": "/products/sbf-hk-019.jpg",
+      "closeup": "/products/sbf-hk-019.jpg"
+    },
+    "description": "Heavy embroidered Pima lawn kurta in white on ice blue. Intense embroidery across the front, heavy embroidered separate sleeves, and embroidered boti on the back. 3-metre shirt piece, can be stitched up to XXXL (chest 27-28 inches)."
+  },
+  {
+    "code": "SBF-HK-020",
+    "name": "Heavy Embroidered Pima Lawn Kurta — Peach",
+    "category": "unstitched",
+    "collection": "Heavy Kurta Collection",
+    "fabric": "Pima Lawn",
+    "pieces": "1 Piece — Embroidered Shirt (3 metres)",
+    "pieceCount": "1pc",
+    "isNew": true,
+    "price": 6800,
+    "salePrice": 6200,
+    "inStock": true,
+    "badges": ["New", "Sale"],
+    "images": {
+      "front": "/products/sbf-hk-020.jpg",
+      "back": "/products/sbf-hk-020.jpg",
+      "closeup": "/products/sbf-hk-020.jpg"
+    },
+    "description": "Heavy embroidered Pima lawn kurta in peach. Intense embroidery across the front, heavy embroidered separate sleeves, and embroidered boti on the back. 3-metre shirt piece, can be stitched up to XXXL (chest 27-28 inches)."
+  },
+  {
+    "code": "SBF-HK-021",
+    "name": "Heavy Embroidered Pima Lawn Kurta — Black on Black (II)",
+    "category": "unstitched",
+    "collection": "Heavy Kurta Collection",
+    "fabric": "Pima Lawn",
+    "pieces": "1 Piece — Embroidered Shirt (3 metres)",
+    "pieceCount": "1pc",
+    "isNew": true,
+    "price": 6800,
+    "salePrice": 6200,
+    "inStock": true,
+    "badges": ["New", "Sale"],
+    "images": {
+      "front": "/products/sbf-hk-021.jpg",
+      "back": "/products/sbf-hk-021.jpg",
+      "closeup": "/products/sbf-hk-021.jpg"
+    },
+    "description": "Heavy embroidered Pima lawn kurta in tonal black on black. Intense embroidery across the front, heavy embroidered separate sleeves, and embroidered boti on the back. 3-metre shirt piece, can be stitched up to XXXL (chest 27-28 inches)."
   }
 ]

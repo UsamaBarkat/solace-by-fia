@@ -53,4 +53,18 @@ Reorganised the site from **fabric categories** (unstitched/stitched/chaddar) to
 - [x] **Task 8 — Logo** Kept the Fraunces text wordmark; grey-background PDF not used in header; code comment notes a transparent-PNG swap pending from client. Footer Instagram/Facebook updated to canonical links + WhatsApp Community added.
 - [x] **Task 9 — Verify + sync docs** `npm run build` clean; `SOLACE-SHOWCASE-SPEC.md` updated (success criteria, folder structure, data model, pages, tasks, validate) to describe the piece-count + Clearance structure; stale "unstitched/stitched/chaddar as categories" copy swept (hero, footer, about, layout/home/shop metadata); this `PROGRESS.md` updated.
 
-> Pending from client: real product data, design references for a theme round, returns policy, transparent-PNG logo. Size Guide on the product page still references unstitched/stitched as genuine garment types (accurate to the catalog), not as navigation.
+> Pending from client: design references for a theme round, returns policy. Size Guide on the product page still references unstitched/stitched as genuine garment types (accurate to the catalog), not as navigation.
+
+---
+
+## v1.2 — Real product catalog + logo (live)
+
+The placeholder sample products are **replaced with the brand's real catalog**, and the real logo is wired in.
+
+- [x] **21 real products** `data/products.json` now holds 21 heavy embroidered Pima lawn kurtas (`SBF-HK-001…021`), all **1-piece**, New + on sale. Photos in `public/products/` renamed `sbf-hk-0NN.jpg`; old `sbf-lwn/std/chd` sample images removed. Each product has one photo (front/back/closeup share the same file).
+- [x] **1pc filter** `PieceCount` type now includes `"1pc"`. Shop `Filters` renders only the piece-count options present in the data (stable `1pc → 2pc → 3pc` order) — currently **All / 1pc**; 2pc/3pc reappear automatically if added.
+- [x] **Single-image galleries** `ProductGallery` de-duplicates by image `src` and hides the thumbnail strip when only one distinct image exists.
+- [x] **Real logo** Header now uses `public/solace-logo-wordmark.png` (h-11 mobile → md:h-14 desktop, links home, alt "Solace by Fia"); the text wordmark + "swap later" note are gone. `public/solace-logo-full.png` set as the favicon and Open Graph image (default `app/favicon.ico` removed; `metadataBase` set).
+- [x] **Home + copy fixes** Three "Where to begin" cards use distinct covers (HK-003 / HK-014 / HK-012); Instagram grid uses 6 real product photos; hero + Shop subheading rewritten to "hand-embroidered Pima lawn kurtas, 1-piece".
+
+**Live:** https://solace-by-fia.vercel.app — 21 real products + real logo deployed.

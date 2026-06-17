@@ -10,12 +10,17 @@ interface Props {
 }
 
 export default function ProductGallery({ images, name }: Props) {
-  const thumbs = [
+  const allThumbs = [
     { src: images.front,   label: "Front" },
     { src: images.back,    label: "Back" },
     { src: images.closeup, label: "Detail" },
     ...(images.dupatta ? [{ src: images.dupatta, label: "Dupatta" }] : []),
   ];
+
+  // Products often reuse the same photo for front/back/closeup — show each image once.
+  const thumbs = allThumbs.filter(
+    (t, i) => allThumbs.findIndex((o) => o.src === t.src) === i
+  );
 
   const [active, setActive] = useState(0);
 
@@ -34,7 +39,8 @@ export default function ProductGallery({ images, name }: Props) {
         />
       </div>
 
-      {/* Thumbnail strip */}
+      {/* Thumbnail strip — only when there's more than one distinct image */}
+      {thumbs.length > 1 && (
       <div className="flex gap-2 overflow-x-auto pb-1" role="group" aria-label="Product images">
         {thumbs.map((t, i) => (
           <button
@@ -59,6 +65,7 @@ export default function ProductGallery({ images, name }: Props) {
           </button>
         ))}
       </div>
+      )}
     </div>
   );
 }
