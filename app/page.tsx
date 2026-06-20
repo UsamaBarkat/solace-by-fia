@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { getAll, getByCode, getAllReviews, type Product } from "@/lib/products";
+import { getAll, getNewArrivals, getByPieceCount, getClearance, getAllReviews, type Product } from "@/lib/products";
 import { buildWhatsAppLink } from "@/lib/whatsapp";
 import Hero from "@/components/Hero";
 import CollectionCard from "@/components/CollectionCard";
@@ -25,13 +25,27 @@ export default function Home() {
   const reviews = getAllReviews().slice(0, 3);
   const heroProduct = products[0];
 
-  // Three entry points into the shop (replaces the old fabric collections),
-  // each with a distinct product cover image.
-  const sections: { href: string; title: string; tagline: string; coverProduct: Product }[] = [
-    { href: "/new-arrivals", title: "New Arrivals", tagline: "Just in",  coverProduct: getByCode("SBF-HK-003")! },
-    { href: "/shop",         title: "Shop all",     tagline: "Browse",   coverProduct: getByCode("SBF-HK-014")! },
-    { href: "/clearance",    title: "Clearance",    tagline: "Reduced",  coverProduct: getByCode("SBF-HK-012")! },
-  ];
+  // Three entry points into the shop (replaces the old fabric collections). Covers are
+  // chosen dynamically with fallbacks (distinct where possible) so the build never breaks
+  // if a product is deleted in the CMS.
+  const fallback: Product | undefined = products[0];
+  const naCover = getNewArrivals()[0] ?? fallback;
+  const shopCover =
+    getByPieceCount("1pc").find((p) => p.code !== naCover?.code) ??
+    products.find((p) => p.code !== naCover?.code) ??
+    fallback;
+  const clearanceCover =
+    getClearance().find((p) => p.code !== naCover?.code && p.code !== shopCover?.code) ??
+    fallback;
+
+  const sections = [
+    { href: "/new-arrivals", title: "New Arrivals", tagline: "Just in",  coverProduct: naCover },
+    { href: "/shop",         title: "Shop all",     tagline: "Browse",   coverProduct: shopCover },
+    { href: "/clearance",    title: "Clearance",    tagline: "Reduced",  coverProduct: clearanceCover },
+  ].filter(
+    (s): s is { href: string; title: string; tagline: string; coverProduct: Product } =>
+      Boolean(s.coverProduct)
+  );
 
   return (
     <>
