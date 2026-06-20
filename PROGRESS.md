@@ -68,3 +68,20 @@ The placeholder sample products are **replaced with the brand's real catalog**, 
 - [x] **Home + copy fixes** Three "Where to begin" cards use distinct covers (HK-003 / HK-014 / HK-012); Instagram grid uses 6 real product photos; hero + Shop subheading rewritten to "hand-embroidered Pima lawn kurtas, 1-piece".
 
 **Live:** https://solace-by-fia.vercel.app — 21 real products + real logo deployed.
+
+---
+
+## v2.0 — Self-service CMS (Sanity) — COMPLETE
+
+Products now live in **Sanity** (headless CMS); the client manages them in **Sanity Studio**.
+The site fetches products from Sanity at build time and auto-rebuilds on content changes.
+Ordering is unchanged (WhatsApp). See `SANITY-CMS-SPEC.md`.
+
+- [x] **Studio** Standalone Sanity Studio (`solace-studio/`, separate repo), project `p4xuisrx`, dataset `production`, `product` schema (§7). Deployed at **https://solace-by-fia.sanity.studio**.
+- [x] **Migration** All products imported into Sanity with images uploaded as assets; auto-generated slug codes cleaned to `SBF-HK-NNN` / `SBF-DW-NNN`. (Fixed a dotted-`_id` bug — `product.<code>` made docs invisible to the public/published perspective; re-created with dot-free IDs so all are publicly readable.)
+- [x] **Website → Sanity** `lib/sanity.ts` (public client, no token), `lib/products.ts` rewritten to fetch via GROQ at build time with **identical helper signatures**; images via `@sanity/image-url`; `cdn.sanity.io` allowed in `next.config`. Reviews still from local JSON (not migrated). Home "Where to begin" covers now chosen **dynamically** with safe fallbacks (no hardcoded codes) so deleting a product can't break the build.
+- [x] **Preview** `sanity-cms` branch → Vercel preview; verified all products render from Sanity, 2pc/1pc filter + WhatsApp ordering work.
+- [x] **Auto-rebuild** Sanity → Vercel deploy-hook webhook fires on product changes; preview rebuilt within ~2 min. (Production webhook handled separately by the developer.)
+- [x] **Go live** Merged `sanity-cms` → `master`; production deploys from Sanity. Env vars `NEXT_PUBLIC_SANITY_PROJECT_ID` / `NEXT_PUBLIC_SANITY_DATASET` are committed in `.env.production` (public values, loaded at build).
+
+**Live:** https://solace-by-fia.vercel.app — now powered by Sanity.
