@@ -11,7 +11,9 @@
 import { useEffect, useRef, useState } from "react";
 
 const SESSION_KEY = "solace-vacation-popup-seen";
-const WHATSAPP_URL = "https://wa.me/923143083863";
+const WHATSAPP_MESSAGE =
+  "Assalam o Alaikum! I know you're on vacation — I have a question for when you're back.";
+const WHATSAPP_URL = `https://wa.me/923143083863?text=${encodeURIComponent(WHATSAPP_MESSAGE)}`;
 
 export default function VacationPopup() {
   const [open, setOpen] = useState(false);
