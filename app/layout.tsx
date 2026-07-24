@@ -6,9 +6,6 @@ import Footer from "@/components/Footer";
 import FloatingPetals from "@/components/FloatingPetals";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import Analytics from "@/components/Analytics";
-// VACATION POPUP — TEMPORARY. Delete this import + the <VacationPopup /> below and
-// remove components/VacationPopup.tsx when vacation ends (after 20 July 2026).
-import VacationPopup from "@/components/VacationPopup";
 
 const fraunces = Fraunces({
   subsets: ["latin"],
@@ -57,9 +54,6 @@ export default function RootLayout({
 
         {/* GA4 (loads only when NEXT_PUBLIC_GA_ID is set) */}
         <Analytics />
-
-        {/* VACATION POPUP — TEMPORARY (remove when vacation ends, after 20 July 2026) */}
-        <VacationPopup />
       </body>
     </html>
   );
