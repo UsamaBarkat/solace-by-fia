@@ -19,14 +19,46 @@ const inter = Inter({
   display: "swap",
 });
 
+const SITE_NAME = "Solace by Fia";
+const SITE_DESCRIPTION =
+  "Hand-embroidered women's clothing — kurtas made with love in Pakistan. Order on WhatsApp.";
+
 export const metadata: Metadata = {
   metadataBase: new URL("https://solace-by-fia.vercel.app"),
-  title: "Solace by Fia",
-  description: "Hand-embroidered women's clothing — 2-piece & 3-piece styles. Order on WhatsApp.",
+  // Pages set their own full "<Page> — Solace by Fia" titles, so no template here.
+  title: SITE_NAME,
+  description: SITE_DESCRIPTION,
+  applicationName: SITE_NAME,
+  keywords: [
+    "Solace by Fia",
+    "Pakistani women's clothing",
+    "hand-embroidered kurta",
+    "Pima lawn kurta",
+    "unstitched",
+    "WhatsApp order",
+  ],
   icons: { icon: "/solace-logo-full.png" },
+  alternates: { canonical: "/" },
   openGraph: {
-    title: "Solace by Fia",
-    description: "Hand-embroidered women's clothing — 2-piece & 3-piece styles. Order on WhatsApp.",
+    type: "website",
+    siteName: SITE_NAME,
+    title: SITE_NAME,
+    description: SITE_DESCRIPTION,
+    url: "/",
+    locale: "en_US",
+    images: [
+      {
+        url: "/solace-logo-full.png",
+        width: 800,
+        height: 797,
+        alt: "Solace by Fia",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary",
+    title: SITE_NAME,
+    description: SITE_DESCRIPTION,
     images: ["/solace-logo-full.png"],
   },
 };
