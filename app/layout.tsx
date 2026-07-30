@@ -39,6 +39,7 @@ export const metadata: Metadata = {
   ],
   icons: { icon: "/solace-logo-full.png" },
   alternates: { canonical: "/" },
+  verification: { google: "M_lTdPZsdb7UFPdtPevvZ3JFQZ1Blud0f-pnO3Dqs_k" },
   openGraph: {
     type: "website",
     siteName: SITE_NAME,
