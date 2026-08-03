@@ -37,7 +37,14 @@ export const metadata: Metadata = {
     "unstitched",
     "WhatsApp order",
   ],
-  icons: { icon: "/solace-logo-full.png" },
+  icons: {
+    // Square icons for browsers + Google search (favicon.ico at the stable root URL).
+    icon: [
+      { url: "/favicon.ico", sizes: "any" },
+      { url: "/icon-512.png", type: "image/png", sizes: "512x512" },
+    ],
+    apple: { url: "/apple-icon.png", sizes: "180x180" },
+  },
   alternates: { canonical: "/" },
   verification: { google: "M_lTdPZsdb7UFPdtPevvZ3JFQZ1Blud0f-pnO3Dqs_k" },
   openGraph: {
